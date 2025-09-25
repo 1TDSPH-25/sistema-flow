@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
 import { Link } from "react-router-dom";
 import { CiEdit } from "react-icons/ci";
+const URL_API = import.meta.env.VITE_API_URL_BASE;
 
 export default function Produtos(){
 
@@ -10,9 +11,8 @@ export default function Produtos(){
     useEffect(()=>{
         
         const fetchData = async ()=>{
-            const response = await fetch("http://localhost:3001/produtos");
+            const response = await fetch(URL_API);
             const data:TipoProduto[] = await response.json();
-            console.log(data);
             setProdutos(data); 
         } 
         fetchData();
