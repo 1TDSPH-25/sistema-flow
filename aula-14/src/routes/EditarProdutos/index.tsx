@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import type { TipoProduto } from "../../types/tipoProduto";
 import { useForm } from "react-hook-form";
+const URL_API = import.meta.env.VITE_API_URL_BASE;
 
 export default function EditarProdutos(){
     //Criando um navegador de rotas.
@@ -23,7 +24,7 @@ export default function EditarProdutos(){
     //Este tipo de REQUEST é chamado de GET.
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`http://localhost:3001/produtos/${id}`);
+            const response = await fetch(`${URL_API}/${id}`);
             const data: TipoProduto = await response.json();
             setValue("id", data.id);
             setValue("nome", data.nome);
