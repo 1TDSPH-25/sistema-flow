@@ -11,6 +11,22 @@
 
         & header{
             @apply bg-blue-500 text-white w-screen h-[20vh];
+
+            & h1{
+                @apply text-center mb-5 font-bold text-3xl;
+            }
+
+            & .menu{
+                @apply w-full flex flex-wrap justify-around;
+
+                & a{
+                    @apply bg-amber-50 text-black p-2 w-30 text-center rounded-xl border-2;
+
+                    &:hover{
+                        @apply underline bg-gray-300;
+                    }
+                }
+            }
         }
 
         & main{
