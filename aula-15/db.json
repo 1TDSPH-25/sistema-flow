@@ -34,6 +34,16 @@
       "id": "7",
       "nome": "Fone de Ouvido",
       "preco": 50.34
+    },
+    {
+      "id": "8",
+      "nome": "Controle Remoto Universal",
+      "preco": 123.78
+    },
+    {
+      "id": "95c3",
+      "nome": "Tela Portátil",
+      "preco": 389.69
     }
   ]
 }
