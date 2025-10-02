@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { TipoProduto } from "../../types/tipoProduto";
 import { Link } from "react-router-dom";
-import { CiEdit } from "react-icons/ci";
+import { CiEdit as Editar} from "react-icons/ci";
+import { MdDeleteOutline as Excluir } from "react-icons/md";
 const URL_API = import.meta.env.VITE_API_URL_BASE;
 
 export default function Produtos(){
@@ -17,11 +18,36 @@ export default function Produtos(){
         } 
         fetchData();
     },[]);
+
+        const modalRef = useRef<HTMLDialogElement>(null);
+
+        const handleDelete = async (id:string)=>{
+            try {
+                
+                if(id && (id != "0") && (id != "")){
+                    await fetch(`${URL_API}/${id}`,{
+                        method:"DELETE"
+                    });
+
+                    setProdutos(produtos.filter((p)=>p.id != Number(id)));
+                    modalRef.current?.close();
+                }
+
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+
  
     return(
         <main> 
             <h1>Produtos</h1>
            
+          <dialog ref={modalRef}>
+            
+          </dialog>
+
             <table border={1}>
                 <thead>
                     <tr>
@@ -37,7 +63,7 @@ export default function Produtos(){
                             <td>{p.id}</td>
                             <td>{p.nome}</td>
                             <td>{p.preco}</td>
-                            <td> <Link to={`/editar/produtos/${p.id}`}> <CiEdit/> </Link> </td>
+                            <td> <Link to={`/editar/produtos/${p.id}`}> <Editar/> </Link> | <Link to={`/editar/produtos/${p.id}`}> <Excluir/> </Link></td>
                         </tr>
                     ))}
                 </tbody>
