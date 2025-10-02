@@ -20,6 +20,7 @@ export default function Produtos(){
     },[]);
 
         const modalRef = useRef<HTMLDialogElement>(null);
+        const [produtoId, setProdutoId] = useState<string | null>(null);
 
         const handleDelete = async (id:string)=>{
             try {
@@ -37,15 +38,21 @@ export default function Produtos(){
                 console.error(error);
             }
         }
-
-
  
     return(
         <main> 
             <h1>Produtos</h1>
            
           <dialog ref={modalRef}>
-            
+                <div>
+                    <h2>Tem certeza que deseja excluir o produto?</h2>
+                    <div>
+                        <button onClick={()=>handleDelete(produtoId || "0")}>Sim</button>
+                    </div>
+                    <div>
+                        <button onClick={()=> modalRef.current?.close()}>Não</button>
+                    </div>
+                </div>
           </dialog>
 
             <table border={1}>
@@ -63,7 +70,8 @@ export default function Produtos(){
                             <td>{p.id}</td>
                             <td>{p.nome}</td>
                             <td>{p.preco}</td>
-                            <td> <Link to={`/editar/produtos/${p.id}`}> <Editar/> </Link> | <Link to={`/editar/produtos/${p.id}`}> <Excluir/> </Link></td>
+                            <td> <Link to={`/editar/produtos/${p.id}`}> <Editar/> </Link> | 
+    <Link to="#" onClick={()=>{setProdutoId(p.id.toString()); modalRef.current?.showModal();}}> <Excluir/> </Link></td>
                         </tr>
                     ))}
                 </tbody>
