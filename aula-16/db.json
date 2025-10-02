@@ -1,11 +1,6 @@
 {
   "produtos": [
     {
-      "id": "1",
-      "nome": "Mouse Gamer",
-      "preco": 300
-    },
-    {
       "id": "2",
       "nome": "Teclado Red",
       "preco": 10

@@ -43,14 +43,14 @@ export default function Produtos(){
         <main> 
             <h1>Produtos</h1>
            
-          <dialog ref={modalRef}>
+          <dialog ref={modalRef} className="mx-auto my-auto p-10 border-2 rounded-2xl">
                 <div>
-                    <h2>Tem certeza que deseja excluir o produto?</h2>
+                    <h2 className="text-center text-2xl font-bold">Tem certeza que deseja excluir o produto?</h2>
                     <div>
-                        <button onClick={()=>handleDelete(produtoId || "0")}>Sim</button>
+                        <button onClick={()=>handleDelete(produtoId || "0")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-5">Sim</button>
                     </div>
                     <div>
-                        <button onClick={()=> modalRef.current?.close()}>Não</button>
+                        <button onClick={()=> modalRef.current?.close()} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded m-5">Não</button>
                     </div>
                 </div>
           </dialog>
