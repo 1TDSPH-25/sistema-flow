@@ -1,3 +1,14 @@
+# Tarefa GIT-FLOW
+LISTA DE TAREFAS:
+
+HOTFIX/ Adicionar imagens diferente para cada item da API, pode ser online. / Diogo - Arthur
+BUGFIX/ Responsividade da NAVBAR /Biribili-Pietro-Pedro
+FEATURES/ Atualizar a home do app com imagens e elementos de interação humana(Informativos, imagens, etc;)/Manu-Isa-Andrei
+FEATURES/ Melhoria do Form de cadastro com todos elementos sendo tratados. / Luna e Gustavo
+FEATURES/ Cards devem ser melhorados na estrutura e tanbém disposição./Moisés/Sbrana/Thiago
+FEATURES/ Correção da apresentação da tabela com alinhamento dos dados inclusive dos ícones / Luis/João/Gabriel
+
+
 # -- API REST, Verbos HTTP e Consumo com React
 
 ## 1. O que é uma API?
