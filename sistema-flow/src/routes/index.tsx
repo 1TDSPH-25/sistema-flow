@@ -1,5 +1,9 @@
+import { Link } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
+
 export default function PaginaCadastro() {
   const { register, handleSubmit, formState: { errors } } = useForm()
+
 
   function onSubmit(data: any) {
     console.log(data)
@@ -69,10 +73,19 @@ export default function PaginaCadastro() {
           <button
             type="submit"
             className="w-full bg-emerald-500 text-white font-semibold p-3 rounded-lg shadow-md hover:bg-emerald-600 hover:shadow-lg transition-all duration-200"
-          ></button>
+          >Cadastrar</button>
 
 
         </form>
+        <p className="text-center mt-6 text-gray-600 text-sm">
+          Já tem conta?
+          <Link
+            to="/login"
+            className="text-emerald-600 hover:text-emerald-700 font-medium ml-1 transition-colors"
+          >
+            Faça login aqui
+          </Link>
+        </p>
 
         
 
