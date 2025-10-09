@@ -48,6 +48,23 @@ export default function PaginaCadastro() {
             />
             {errors.nomeUsuario && <p className="text-red-500 text-sm mt-1">{String(errors.nomeUsuario.message)}</p>}
           </div>
+          {/* Email */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Email</label>
+            <input
+              type="email"
+              {...register("email", {
+                required: "Email é obrigatório",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$/i,
+                  message: "Insira um email válido."
+                }
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
+              placeholder="exemplo@email.com"
+            />
+            {errors.email && <p className="text-red-500 text-sm mt-1">{String(errors.email.message)}</p>}
+          </div>
 
 
         </form>
