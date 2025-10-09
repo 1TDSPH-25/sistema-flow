@@ -65,6 +65,11 @@ export default function PaginaCadastro() {
             />
             {errors.email && <p className="text-red-500 text-sm mt-1">{String(errors.email.message)}</p>}
           </div>
+          {/* Botão */}
+          <button
+            type="submit"
+            className="w-full bg-emerald-500 text-white font-semibold p-3 rounded-lg shadow-md hover:bg-emerald-600 hover:shadow-lg transition-all duration-200"
+          ></button>
 
 
         </form>
@@ -74,4 +79,5 @@ export default function PaginaCadastro() {
         </div>
     </div>
   )
+
 
