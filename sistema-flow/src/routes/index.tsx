@@ -30,6 +30,24 @@ export default function PaginaCadastro() {
                 />
                 {errors.nome && <p className="text-red-500 text-sm mt-1">{String(errors.nome.message)}</p>}
           </div>
+          {/* Nome de usuário */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Nome de usuário</label>
+            <input
+              type="text"
+              {...register("nomeUsuario", {
+                required: "Nome de usuário é obrigatório",
+                pattern: {
+                  value: /^[a-z]+$/,
+                  message: "Use apenas letras minúsculas (a-z)."
+                },
+                minLength: { value: 3, message: "Mínimo de 3 caracteres." }
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
+              placeholder="Ex: joaosilva"
+            />
+            {errors.nomeUsuario && <p className="text-red-500 text-sm mt-1">{String(errors.nomeUsuario.message)}</p>}
+          </div>
 
 
         </form>
