@@ -2,7 +2,12 @@
 
 ## Todas as TAREFAS/FEATURES devem ser finalizadas.
 ### Prestar atenção ao <span style="color:red">DEADLINE</span> das FEATURES. 
-#Teste
+
+### RESPONSABILIDADES:
+## MENTORIA    : PROF.ALEXANDRE
+## TÉC LEAD    : ISABELA
+## HOMOLOGADOR : BIRIBILLI
+
 ---
 ## IMPLEMENTADOS:
 <ul style="color:green">
@@ -13,12 +18,6 @@
 ---
 ## EM HOMOLOGAÇÃO:
 <ul style="color:orange">
-   <li> ...</li>
-</ul>
-
----
-## EM DESENVOLVIMENTO:
-<ul style="color:yellow">
 <li>[   ] FEATURE / Limpar o boiler-plate e instalar os pacotes react-router-dom, tailwindcss, json-server, react-icons, react-use-form/Andrei+Manuela+Isabela </li>
 <li>[   ] FEATURE / Criar os componentes principais dentro dos padrões estabelecidos com nomes e pastas Cabecalho, Rodape e Menu / Biribilli+Pietro+PedroC</li>
 <li>[   ] FEATURE / Criar estrutura de rotas e registrar estas rotas no main, lembrar os dev do menu de quais rotas devem criar, as rotas inicias devem ser: Login, Cadastro. /Luna+GustavoK+FelipeM+Alisson</li>
@@ -26,5 +25,15 @@
 <li>[   ] FEATURE / Criação de conteúdo dinâmico na Home - sistema de notícias(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
 <li>[   ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Arthur+Diogo+GustavoM  </li>
 <li>[   ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Murillo+PedroM+LeonardoZ</li>
-
+   <li> ...</li>
 </ul>
+
+---
+## EM DESENVOLVIMENTO:
+<ul style="color:yellow">
+   li> ...</li>
+</ul>
+
+## TIME FREE
+[Huguinho, Zezinho, Luizinho]
+[Huguinho, Zezinho, Luizinho]
