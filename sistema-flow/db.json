@@ -1,0 +1,11 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Luiz",
+      "nomeUser": "luiz",
+      "email": "luiz@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=3"
+    }
+  ]
+}
