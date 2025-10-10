@@ -40,10 +40,11 @@ thiagoA, GabrielL
    <li>[   ] FEATURE / Estilizar os componentes Menu e o Rodape / thiagoA, GabrielL</li>
    <li>[   ] FEATURE / Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
    <li>[  ] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem]/ Murillo+PedroM+jojo</li>
+   <li>[  ] FEATURE / Criar um compodente CardRemedio e a Página Remédios/Andrei+Manuela+Felipe </li>
   
 
 </ul>
 
 ## TIME FREE
-[Manuela, Andrei, Felipe]
+
 
