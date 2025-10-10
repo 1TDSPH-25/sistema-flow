@@ -5,3 +5,9 @@ scr|
             | Cadastro - index.tsx
 
 Outras rotas só devem ser implementadas mediante definição oficial nas tarefas para manter o escopo designado pelo professor. */ 
+
+export default function Login(){
+   return(
+      <h1>Login</h1>
+   );
+}
