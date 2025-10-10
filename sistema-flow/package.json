@@ -12,10 +12,6 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
-<<<<<<< HEAD
-    "json-server": "^1.0.0-beta.3",
-=======
->>>>>>> 1cd88caf23f3717026c532793bc707008d379d35
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-hook-form": "^7.64.0",
