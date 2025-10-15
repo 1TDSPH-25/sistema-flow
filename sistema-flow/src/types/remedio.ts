@@ -4,5 +4,5 @@ export type Remedio = {
   descricao: string;
   dataFabricacao: string;
   dataValidade: string;
-  imagem: string;
+  imagem: string; /* URL da imagem do remédio */
 };
