@@ -16,12 +16,13 @@
 <li>[ x ] FEATURE / Limpar o boiler-plate e instalar os pacotes react-router-dom, tailwindcss, json-server, react-icons, react-use-form/Andrei+Manuela+Felipe </li>
 <li>[ x ] FEATURE / Criar os componentes principais dentro dos padrões estabelecidos com nomes e pastas Cabecalho, Rodape e Menu / Biribilli+Pietro+PedroC</li>
 <li>[ x ] FEATURE / Criação de conteúdo dinâmico na Home - sistema de notícias(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
+<li>[ x ] FEATURE / Criação de conteúdo dinâmico na Home - Alteração para a API OUL de Saúde(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
 
 ---
 ## EM HOMOLOGAÇÃO:
 <ul style="color:orange">
 
-<li>[  ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Murillo+PedroM+LeonardoZ</li>
+<li>[   ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Murillo+PedroM+LeonardoZ</li>
 </ul>
 <li>[   ] FEATURE / Criar estrutura de rotas e registrar estas rotas no main, lembrar os dev do menu de quais rotas devem criar, as rotas inicias devem ser: Login, Cadastro. /Luna+GustavoK+FelipeM+Alisson</li>
 <li>[   ] FEATURE / Criar uma api com json-server, o endpoint de nome usuarios, os dados do endpoint são [id,nome,nomeUser,email,avatar]/GustavoM+EnzoR+Luiz </li>
@@ -46,5 +47,5 @@ thiagoA, GabrielL
 </ul>
 
 ## TIME FREE
-
+GabrielSbrana+Moisés+Thiago
 
