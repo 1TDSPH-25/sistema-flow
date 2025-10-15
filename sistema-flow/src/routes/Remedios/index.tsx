@@ -5,7 +5,7 @@ export default function PaginaRemedios() {
     <main className="pagina-remedios">
       <h1 className="pagina-remedios-titulo">Nossos Remédios</h1>
       <div className="container-cards">
-        {/* Os remédios serão colocados aqui */}
+        {/* AVISO PARA DEVs DA API: Os remédios devem ser colocados aqui utilizando os tipos presentes em 'remedio.ts' */}
       </div>
     </main>
   );
