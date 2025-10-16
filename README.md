@@ -40,11 +40,15 @@
    <li>[   ] FEATURE / Estilizar os componentes Menu e o Rodape / thiagoA, GabrielL</li>
    <li>[   ] FEATURE / Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
    <li>[   ] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem]/ Murillo+PedroM+jojo</li>
+   <li>[  ] FEATURE /Arrumar o Cabecalho / Menu, colocar o link da página Remédios e configurar dentro no App.tsx/Andrei+Manu+Felipe
+   </li>
+   <li>[  ] FEATURE / Melhorar e estilizar o compodente CardRemedio e a Página Remédios/ Luna+GustavoK+FelipeM+Alisson
+   </li>
+   
    
   
 
 </ul>
 
 ## TIME FREE
-Luna+GustavoK+FelipeM+Alisson
-Andrei+Manuela+Felipe
+
