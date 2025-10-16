@@ -1,13 +1,13 @@
 import { Outlet } from 'react-router-dom';
-// Mantido para estilos globais, se houver.
-
+import Cabecalho from './components/Cabecalho/Cabecalho';
+import Rodape from './components/Rodape/Rodape';
+ 
 export default function App() {
   return (
     <div className="app-container">
-      <main>
+        <Cabecalho />
         <Outlet />
-      </main>
+        <Rodape />
     </div>
   );
 }
-
