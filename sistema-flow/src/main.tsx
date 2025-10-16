@@ -6,12 +6,14 @@ import Home from './routes/Home/index.tsx'
 import Error from './routes/Error/index.tsx'
 import Login from './routes/Login/index.tsx'
 import Cadastro from './routes/Cadastro/index.tsx'
+import PaginaRemedios from './routes/Remedios/index.tsx'
 
 const router = createBrowserRouter([
   {path:"/", element: <App/>, errorElement:<Error/>, children:[
     {path:"/", element:<Home/>}, 
     {path: "/login", element: <Login/>},
-    {path: "/cadastro",element: <Cadastro/>}
+    {path: "/cadastro", element: <Cadastro/>},
+    {path: "/remedios", element: <PaginaRemedios />}
   ]}
 ])
 
