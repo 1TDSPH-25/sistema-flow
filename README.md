@@ -37,8 +37,8 @@
 ## EM DESENVOLVIMENTO:
 <ul style="color:yellow">
    <li>[   ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Murillo+PedroM+LeonardoZ</li>
+   <li>[   ] FEATURE / Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
    <li>[   ] FEATURE / Estilizar os componentes Menu e o Rodape / thiagoA, GabrielL</li>
-   <li>[   ] FEATURE / Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
    <li>[   ] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem]/ Murillo+PedroM+jojo</li>
    <li>[  ] FEATURE /Arrumar o Cabecalho / Menu, colocar o link da página Remédios e configurar dentro no App.tsx/Andrei+Manu+Felipe
    </li>
