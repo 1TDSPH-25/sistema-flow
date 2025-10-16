@@ -18,7 +18,7 @@ export const LoginForm: React.FC = () => {
     resolver: zodResolver(schema),
   });
   const onSubmit = (data: LoginFormInputs) => {
-    alert(Login realizado!\nEmail: ${data.email});
+    alert(`Login realizado!\nEmail: ${data.email}`);
   };
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>

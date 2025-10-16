@@ -4,7 +4,7 @@ import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home/index.tsx'
 import Error from './routes/Error/index.tsx'
-import Login from './routes/Login/index.tsx'
+import Login from './components/Login/index.tsx'
 import Cadastro from './routes/Cadastro/index.tsx'
 import PaginaRemedios from './routes/Remedios/index.tsx'
 
