@@ -2,10 +2,18 @@
   "usuarios": [
     {
       "id": 1,
-      "nome": "Luiz",
-      "nomeUser": "luiz",
-      "email": "luiz@example.com",
-      "avatar": "https://i.pravatar.cc/150?img=3"
+      "nome": "Luiz Gustavo",
+      "nomeUser": "luizg",
+      "email": "luiz@email.com",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": 2,
+      "nome": "João Pedro",
+      "nomeUser": "joaop",
+      "email": "joao@email.com",
+      "avatar": "https://i.pravatar.cc/150?img=2"
     }
   ]
 }
+
