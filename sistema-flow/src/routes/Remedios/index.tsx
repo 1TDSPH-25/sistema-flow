@@ -1,5 +1,3 @@
-import CardRemedio from "../../components/Card/CardRemedio";
-
 export default function PaginaRemedios() {
   return (
     <main>
