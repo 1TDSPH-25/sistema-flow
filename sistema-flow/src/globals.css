@@ -1,3 +1,28 @@
 @import "tailwindcss";
 
 :root {scroll-behavior: smooth;}
+
+@layer base{
+  .titulo{
+        @apply font-bold text-blue-700 text-center leading-loose text-4xl bg-gradient-to-r from-green-500 via-green-300 to-green-100 h-24 w-full;
+    }
+    .espacamento{
+         @apply flex flex-col items-center gap-8 p-4;
+    }
+
+    .cardNoticia{
+         @apply w-full max-w-lg h-auto border-2 border-black rounded-2xl p-4 flex flex-col items-start;
+    }
+
+    .noticiaTitulo{
+         @apply font-bold text-center text-xl;
+    }
+
+    .descricaoNoticia{
+        @apply text-sm md:text-base font-mono font-semibold
+    }
+    
+    .link{
+        @apply font-bold hover:text-blue-700;
+    }
+}
