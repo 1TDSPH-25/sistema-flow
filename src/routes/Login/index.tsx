@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import styles from "./LoginForm.module.css";
+import styles from "./Login.module.css";
 
 const schema = z.object({
   email: z.string().email("Email inválido"),
@@ -18,7 +18,7 @@ export const LoginForm: React.FC = () => {
     resolver: zodResolver(schema),
   });
   const onSubmit = (data: LoginFormInputs) => {
-    alert(Login realizado!\nEmail: ${data.email});
+    alert(`Login realizado!\nEmail: ${data.email}`);
   };
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
