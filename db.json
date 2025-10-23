@@ -1,4 +1,171 @@
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "remedios": [
+        {
+            "id": 1,
+            "nome": "Paracetamol 750mg",
+            "descricao": "Analgésico e antitérmico...",
+            "dataFabricacao": "2024-01-15",
+            "dataValidade": "2026-01-15",
+            "imagem": "https://product-data.raiadrogasil.io/images/10724941.webp"
+        },
+        {
+            "id": 2,
+            "nome": "Dipirona 500mg",
+            "descricao": "Analgésico, antipirético...",
+            "dataFabricacao": "2024-03-10",
+            "dataValidade": "2026-03-10",
+            "imagem": "https://www.drogaraia.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F3555211.webp&w=828&q=75%22"
+        },
+        {
+            "id": 3,
+            "nome": "Amoxicilina 500mg",
+            "descricao": "Antibiótico de amplo espectro...",
+            "dataFabricacao": "2024-05-20",
+            "dataValidade": "2025-05-20",
+            "imagem": "https://www.drogariaminasbrasil.com.br/media/webp/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/636094412/amoxicilina-500mg-com-21-capsulas-duras-generico-prati-donaduzzi_jpg.webp"
+        },
+        {
+            "id": 4,
+            "nome": "Loratadina 10mg",
+            "descricao": "Anti-histamínico...",
+            "dataFabricacao": "2024-02-01",
+            "dataValidade": "2026-08-01",
+            "imagem": "https://www.drogaraia.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F3812103.webp&w=3840&q=40"
+        },
+        {
+            "id": 5,
+            "nome": "Ibuprofeno 400mg",
+            "descricao": "Anti-inflamatório não esteroide...",
+            "dataFabricacao": "2024-06-05",
+            "dataValidade": "2026-06-05",
+            "imagem": "https://cdn1.staticpanvel.com.br/produtos/15/102215-15.jpg"
+        },
+        {
+            "id": 6,
+            "nome": "Omeprazol 20mg",
+            "descricao": "Inibidor da bomba de prótons...",
+            "dataFabricacao": "2024-04-12",
+            "dataValidade": "2026-04-12",
+            "imagem": "https://www.drogariaminasbrasil.com.br/media/webp/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/6361811ec/omeprazol-20mg-com-56-capsulas-generico-teuto_jpg.webp"
+        },
+        {
+            "id": 7,
+            "nome": "Sinvastatina 20mg",
+            "descricao": "Usado para reduzir os níveis de colesterol...",
+            "dataFabricacao": "2024-07-20",
+            "dataValidade": "2026-07-20",
+            "imagem": "https://d1jgmae0hcnr1i.cloudfront.net/Custom/Content/Products/93/08/93082_sinvastatina-20-mg-c-30-cp-rev-p70610_z1_638288353718338615.webp"
+        },
+        {
+            "id": 8,
+            "nome": "Losartana 50mg",
+            "descricao": "Anti-hipertensivo...",
+            "dataFabricacao": "2024-01-30",
+            "dataValidade": "2027-01-30",
+            "imagem": "https://www.drogariaminasbrasil.com.br/media/webp/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/674687883/losartana-potassica-50mg-com-30-comprimidos-medley-generico_jpg.webp"
+        },
+        {
+            "id": 9,
+            "nome": "Metformina 850mg",
+            "descricao": "Antidiabético oral...",
+            "dataFabricacao": "2024-08-10",
+            "dataValidade": "2026-08-10",
+            "imagem": "https://images.tcdn.com.br/img/img_prod/740081/cloridrato_de_metformina_850mg_30_comprimidos_revestidos_prati_2113_1_a9ce61cce5fa846609dc62642750740b.jpg"
+        },
+        {
+            "id": 10,
+            "nome": "Azitromicina 500mg",
+            "descricao": "Antibiótico...",
+            "dataFabricacao": "2024-03-25",
+            "dataValidade": "2025-09-25",
+            "imagem": "https://www.drogariaminasbrasil.com.br/media/webp/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/663802c17/azitromicina-di-hidratada-500mg-com-3-comprimidos-generico-pharlab_jpg.webp"
+        },
+        {
+            "id": 11,
+            "nome": "Dramin B6 50mg",
+            "descricao": "Antiemético...",
+            "dataFabricacao": "2024-05-05",
+            "dataValidade": "2026-05-05",
+            "imagem": "https://santaluciadrogaria.vtexassets.com/arquivos/ids/158036-800-1067?v=637638004401030000&width=800&height=1067&aspect=true%22"
+        },
+        {
+            "id": 12,
+            "nome": "Nimesulida 100mg",
+            "descricao": "Anti-inflamatório...",
+            "dataFabricacao": "2024-02-18",
+            "dataValidade": "2026-02-18",
+            "imagem": "https://d3mhu901409m9r.cloudfront.net/Custom/Content/Products/45/98/45986_nimesulida-100-mg-c-12-cpr-globo-p37733_m1_638700461701870805.webp"
+        },
+        {
+            "id": 13,
+            "nome": "Rivotril (Clonazepam) 2mg",
+            "descricao": "Ansiolítico...",
+            "dataFabricacao": "2024-09-01",
+            "dataValidade": "2026-09-01",
+            "imagem": "https://hmcmax.com/wp-content/uploads/2023/06/clonazepam2mg.jpg"
+        },
+        {
+            "id": 14,
+            "nome": "Atenolol 25mg",
+            "descricao": "Beta-bloqueador...",
+            "dataFabricacao": "2024-04-22",
+            "dataValidade": "2027-04-22",
+            "imagem": "https://www.drogariaminasbrasil.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/56791e5de/atenolol-25mg-com-30-comprimidos-generico-medley.jpg"
+        },
+        {
+            "id": 15,
+            "nome": "Captopril 25mg",
+            "descricao": "Inibidor da ECA...",
+            "dataFabricacao": "2024-07-14",
+            "dataValidade": "2026-07-14",
+            "imagem": "https://d1jgmae0hcnr1i.cloudfront.net/Custom/Content/Products/89/02/89023_captopril-25mg-c-30cpr-p63429_z1_638383174046226262.webp"
+        },
+        {
+            "id": 16,
+            "nome": "Prednisona 20mg",
+            "descricao": "Corticosteroide...",
+            "dataFabricacao": "2024-06-30",
+            "dataValidade": "2025-12-30",
+            "imagem": "https://www.equipofarma.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/4/0/408090133246am.png"
+        },
+        {
+            "id": 17,
+            "nome": "Fluoxetina 20mg",
+            "descricao": "Antidepressivo (ISRS)...",
+            "dataFabricacao": "2024-08-05",
+            "dataValidade": "2026-08-05",
+            "imagem": "https://pharmascience.com.br/wp-content/uploads/2020/05/Clor_Fluoxetina_30_caps-2atua.png"
+        },
+        {
+            "id": 18,
+            "nome": "Hidroclorotiazida 25mg",
+            "descricao": "Diurético...",
+            "dataFabricacao": "2024-03-19",
+            "dataValidade": "2027-03-19",
+            "imagem": "https://d1jgmae0hcnr1i.cloudfront.net/Custom/Content/Products/88/70/88707_hidroclorotiazida-25mg-c-30-cp-p61336_z1_638276041457729174.webp"
+        },
+        {
+            "id": 19,
+            "nome": "Torsilax",
+            "descricao": "Relaxante muscular...",
+            "dataFabricacao": "2024-05-15",
+            "dataValidade": "2026-05-15",
+            "imagem": "https://d1jgmae0hcnr1i.cloudfront.net/Custom/Content/Products/15/72/157208_torsilax-c-12-cp-p63196_z1_638318523450346960.webp"
+        },
+        {
+            "id": 20,
+            "nome": "Xarelto 20mg",
+            "descricao": "Anticoagulante...",
+            "dataFabricacao": "2024-01-10",
+            "dataValidade": "2025-07-10",
+            "imagem": "https://d1jgmae0hcnr1i.cloudfront.net/Custom/Content/Products/96/33/96330_xarelto-20mg-c-28cpr-pbm-p72608_m1_638290085919541564.webp"
+        }
+    ]
+=======
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
   "remedios": [
     {
       "id": 1,
@@ -14,7 +181,11 @@
       "descricao": "Analgésico, antipirético...",
       "dataFabricacao": "2024-03-10",
       "dataValidade": "2026-03-10",
+<<<<<<< HEAD
       "imagem": "https://www.drogaraia.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F3555211.webp&w=828&q=75%22"
+=======
+      "imagem": "https://www.drogaraia.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F3555211.webp&w=828&q=75"
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
     },
     {
       "id": 3,
@@ -86,7 +257,11 @@
       "descricao": "Antiemético...",
       "dataFabricacao": "2024-05-05",
       "dataValidade": "2026-05-05",
+<<<<<<< HEAD
       "imagem": "https://santaluciadrogaria.vtexassets.com/arquivos/ids/158036-800-1067?v=637638004401030000&width=800&height=1067&aspect=true%22"
+=======
+      "imagem": "https://santaluciadrogaria.vtexassets.com/arquivos/ids/158036-800-1067?v=637638004401030000&width=800&height=1067&aspect=true"
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
     },
     {
       "id": 12,
@@ -161,4 +336,8 @@
       "imagem": "https://d1jgmae0hcnr1i.cloudfront.net/Custom/Content/Products/96/33/96330_xarelto-20mg-c-28cpr-pbm-p72608_m1_638290085919541564.webp"
     }
   ]
+<<<<<<< HEAD
+=======
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
 }

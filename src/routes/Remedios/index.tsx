@@ -1,12 +1,30 @@
 import { useState, useEffect } from 'react';
 import type { Remedio } from '../../types/remedio';
+<<<<<<< HEAD
  
  
+=======
+<<<<<<< HEAD
+ 
+ 
+=======
+
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
 export default function PaginaRemedios() {
   const [remedios, setRemedios] = useState<Remedio[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+<<<<<<< HEAD
  
+=======
+<<<<<<< HEAD
+ 
+=======
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
   useEffect(() => {
     const fetchRemedios = async () => {
       try {
@@ -28,12 +46,28 @@ export default function PaginaRemedios() {
     };
     fetchRemedios();
   }, []);
+<<<<<<< HEAD
  
+=======
+<<<<<<< HEAD
+ 
+=======
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
   const renderContent = () => {
     if (loading) {
       return <p className="remedios-loading">Carregando remédios...</p>;
     }
+<<<<<<< HEAD
  
+=======
+<<<<<<< HEAD
+ 
+=======
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
     if (error) {
       return (
         <div className="remedios-error">
@@ -41,11 +75,25 @@ export default function PaginaRemedios() {
         </div>
       );
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
  
     if (remedios.length === 0) {
       return <p className="remedios-empty">Nenhum remédio encontrado.</p>;
     }
  
+<<<<<<< HEAD
+=======
+=======
+
+    if (remedios.length === 0) {
+      return <p className="remedios-empty">Nenhum remédio encontrado.</p>;
+    }
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
     return remedios.map((remedio) => (
       <div key={remedio.id} className="remedio-card">
         <img
@@ -53,11 +101,25 @@ export default function PaginaRemedios() {
           alt={`Imagem de ${remedio.nome}`}
           className="remedio-card-image"
         />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
  
         <div className="remedio-card-body">
           <h2 className="remedio-card-title">{remedio.nome}</h2>
           <p className="remedio-card-description">{remedio.descricao}</p>
  
+<<<<<<< HEAD
+=======
+=======
+
+        <div className="remedio-card-body">
+          <h2 className="remedio-card-title">{remedio.nome}</h2>
+          <p className="remedio-card-description">{remedio.descricao}</p>
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
           <div className="remedio-card-footer">
             <small className="remedio-card-date">
               Fabricação: {new Date(remedio.dataFabricacao).toLocaleDateString()}
@@ -70,7 +132,15 @@ export default function PaginaRemedios() {
       </div>
     ));
   };
+<<<<<<< HEAD
  
+=======
+<<<<<<< HEAD
+ 
+=======
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
+>>>>>>> 39de45fd8cf34122a5ee431bf1eb8fc1a42f011d
   return (
     <main className="remedios-page">
       <h1 className="remedios-title">Nossos Remédios</h1>
