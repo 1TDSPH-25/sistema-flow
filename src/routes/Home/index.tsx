@@ -34,8 +34,8 @@ export default function Home() {
 
   return (
     <main>
-      <h1>Notícias sobre Saúde</h1>
-      <div>
+      <h1 className="titulo">Notícias sobre Saúde</h1>
+      <div className="espacamento">
         {noticias.map((n) => (
           <CardNoticias key={n.url} noticia={n} />
         ))}
