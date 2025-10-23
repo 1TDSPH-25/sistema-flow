@@ -9,7 +9,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="w-96 p-6 bg-white rounded shadow rounded-2xl">
+      <div className="w-96 p-6 bg-white shadow rounded-2xl">
         <div className="text-center mb-6">
           <h1 className="text-2xl font-bold mb-2">Sistema Flow</h1>
           <p className="text-gray-600">Entre na sua conta</p>
