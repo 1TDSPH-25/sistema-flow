@@ -1,12 +1,21 @@
 import { useState, useEffect } from 'react';
 import type { Remedio } from '../../types/remedio';
+<<<<<<< HEAD
  
  
+=======
+
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
 export default function PaginaRemedios() {
   const [remedios, setRemedios] = useState<Remedio[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
   useEffect(() => {
     const fetchRemedios = async () => {
       try {
@@ -28,12 +37,20 @@ export default function PaginaRemedios() {
     };
     fetchRemedios();
   }, []);
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
   const renderContent = () => {
     if (loading) {
       return <p className="remedios-loading">Carregando remédios...</p>;
     }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
     if (error) {
       return (
         <div className="remedios-error">
@@ -41,11 +58,19 @@ export default function PaginaRemedios() {
         </div>
       );
     }
+<<<<<<< HEAD
  
     if (remedios.length === 0) {
       return <p className="remedios-empty">Nenhum remédio encontrado.</p>;
     }
  
+=======
+
+    if (remedios.length === 0) {
+      return <p className="remedios-empty">Nenhum remédio encontrado.</p>;
+    }
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
     return remedios.map((remedio) => (
       <div key={remedio.id} className="remedio-card">
         <img
@@ -53,11 +78,19 @@ export default function PaginaRemedios() {
           alt={`Imagem de ${remedio.nome}`}
           className="remedio-card-image"
         />
+<<<<<<< HEAD
  
         <div className="remedio-card-body">
           <h2 className="remedio-card-title">{remedio.nome}</h2>
           <p className="remedio-card-description">{remedio.descricao}</p>
  
+=======
+
+        <div className="remedio-card-body">
+          <h2 className="remedio-card-title">{remedio.nome}</h2>
+          <p className="remedio-card-description">{remedio.descricao}</p>
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
           <div className="remedio-card-footer">
             <small className="remedio-card-date">
               Fabricação: {new Date(remedio.dataFabricacao).toLocaleDateString()}
@@ -70,7 +103,11 @@ export default function PaginaRemedios() {
       </div>
     ));
   };
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
   return (
     <main className="remedios-page">
       <h1 className="remedios-title">Nossos Remédios</h1>

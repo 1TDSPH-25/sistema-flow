@@ -15,11 +15,17 @@
 
   .cardNoticia {
     @apply border border-gray-500 rounded-lg shadow-lg bg-gray-300 transition-all text-center flex flex-col items-center;
+<<<<<<< HEAD
 
     & a {
       @apply bg-blue-500 flex justify-center items-center rounded-lg shadow-lg text-white font-semibold;
     }
 
+=======
+    & a {
+      @apply bg-blue-500 flex justify-center  items-center rounded-lg shadow-lg text-white font-semibold;
+    }
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
     & a:hover {
       @apply bg-blue-800 text-white;
     }
@@ -49,8 +55,12 @@
   }
 
   .remedio-card-body {
+<<<<<<< HEAD
     @apply p-6 flex flex-col flex-1;
     /* flex-1 é crucial para o footer */
+=======
+    @apply p-6 flex flex-col flex-1; /* flex-1 é crucial para o footer */
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
   }
 
   .remedio-card-title {
@@ -58,6 +68,7 @@
   }
 
   .remedio-card-description {
+<<<<<<< HEAD
     @apply text-gray-700 text-sm flex-1 mb-4;
     /* flex-1 faz a descrição crescer */
   }
@@ -65,6 +76,13 @@
   .remedio-card-footer {
     @apply mt-auto pt-4 border-t border-gray-200;
     /* mt-auto empurra para baixo */
+=======
+    @apply text-gray-700 text-sm flex-1 mb-4; /* flex-1 faz a descrição crescer */
+  }
+
+  .remedio-card-footer {
+    @apply mt-auto pt-4 border-t border-gray-200; /* mt-auto empurra para baixo */
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
   }
 
   .remedio-card-date {
@@ -83,4 +101,8 @@
   .remedios-empty {
     @apply text-center text-gray-500;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1c55eac131469e6f5fd6dc1411af705d4cd1d862
