@@ -1,3 +1,4 @@
+<<<<<<< HEAD:sistema-flow/db.json
 {
   "usuarios": [
     {
@@ -23,3 +24,6 @@
     }
   ]
 }
+=======
+{}
+>>>>>>> main:db.json

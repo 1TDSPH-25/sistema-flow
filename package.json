@@ -8,11 +8,22 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+<<<<<<< HEAD:sistema-flow/package.json
     "json-server": "json-server --watch db.json --port 3001"
+=======
+    "api": "json-server --watch db.json --port 3001"
+>>>>>>> main:package.json
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@tailwindcss/vite": "^4.1.14",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.64.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.9.4",
+    "tailwindcss": "^4.1.14",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
