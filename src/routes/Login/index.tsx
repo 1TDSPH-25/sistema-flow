@@ -1,52 +1,61 @@
-import React from "react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import styles from "./Login.module.css";
+import { useNavigate } from "react-router-dom";
 
-const schema = z.object({
-  email: z.string().email("Email inválido"),
-  password: z.string().min(6, "A senha deve ter ao menos 6 caracteres"),
-});
-type LoginFormInputs = z.infer<typeof schema>;
-export const LoginForm: React.FC = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm<LoginFormInputs>({
-    resolver: zodResolver(schema),
-  });
-  const onSubmit = (data: LoginFormInputs) => {
-    alert(`Login realizado!\nEmail: ${data.email}`);
+export default function Login() {
+  const navigate = useNavigate();
+
+  const handleEntrar = () => {
+    navigate("/");
   };
+
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-      <h2 className={styles.title}>Login</h2>
-      <div className={styles.inputGroup}>
-        <label htmlFor="email">Email:</label>
-        <input
-          id="email"
-          type="email"
-          {...register("email")}
-          className={errors.email ? styles.inputError : ""}
-        />
-        {errors.email && <span className={styles.error}>{errors.email.message}</span>}
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="w-96 p-6 bg-white rounded shadow rounded-2xl">
+        <div className="text-center mb-6">
+          <h1 className="text-2xl font-bold mb-2">Sistema Flow</h1>
+          <p className="text-gray-600">Entre na sua conta</p>
+        </div>
+
+        <div className="space-y-4">
+          <div>
+            <label className="block mb-1">Nome de usuário</label>
+            <input
+              type="text"
+              name="username"
+              className="w-full p-3 border rounded"
+              placeholder="Digite seu usuário"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-1">Senha</label>
+            <input
+              type="password"
+              name="password"
+              className="w-full p-3 border rounded"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <button 
+            onClick={handleEntrar}
+            className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700"
+          >
+            Entrar
+          </button>
+        </div>
+
+        <div className="text-center mt-4">
+          <p className="text-sm">
+            Não tem uma conta?{" "}
+            <button 
+              onClick={() => navigate("/cadastro")} 
+              className="text-blue-600 hover:underline"
+            >
+              Cadastre-se
+            </button>
+          </p>
+        </div>
       </div>
-      <div className={styles.inputGroup}>
-        <label htmlFor="password">Senha:</label>
-        <input
-          id="password"
-          type="password"
-          {...register("password")}
-          className={errors.password ? styles.inputError : ""}
-        />
-        {errors.password && <span className={styles.error}>{errors.password.message}</span>}
-      </div>
-      <button type="submit" className={styles.button} disabled={isSubmitting}>
-        Entrar
-      </button>
-    </form>
+    </div>
   );
-};
-export default LoginForm;
+}
