@@ -11,26 +11,36 @@
 ---
 ## IMPLEMENTADOS:
 <ul style="color:green">
-<li>[ x ] FEATURE / Realizar a lista de tarefas no README.md / prof.Alexandre </li>
-<li>[ x ] FEATURE / Criar o projeto (VITE+REACT+TS) do zero / prof.Alexandre </li>
-<li>[ x ] FEATURE / Limpar o boiler-plate e instalar os pacotes react-router-dom, tailwindcss, json-server, react-icons, react-use-form/Andrei+Manuela+Felipe </li>
-<li>[ x ] FEATURE / Criar os componentes principais dentro dos padrões estabelecidos com nomes e pastas Cabecalho, Rodape e Menu / Biribilli+Pietro+PedroC</li>
-<li>[ x ] FEATURE / Criação de conteúdo dinâmico na Home - sistema de notícias(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
-<li>[ x ] FEATURE / Criação de conteúdo dinâmico na Home - Alteração para a API OUL de Saúde(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
-<li>[ x ] FEATURE / Criar estrutura de rotas e registrar estas rotas no main, lembrar os dev do menu de quais rotas devem criar, as rotas inicias devem ser: Login, Cadastro. /Luna+GustavoK+FelipeM+Alisson</li>
-<li>[ x ] FEATURE / Criar um compodente CardRemedio e a Página Remédios/Andrei+Manuela+Felipe </li>
+   <li>[ x ] FEATURE / Realizar a lista de tarefas no README.md / prof.Alexandre </li>
+   <li>[ x ] FEATURE / Criar o projeto (VITE+REACT+TS) do zero / prof.Alexandre </li>
+   <li>[ x ] FEATURE / Limpar o boiler-plate e instalar os pacotes react-router-dom, tailwindcss, json-server, react-icons, react-use-form/Andrei+Manuela+Felipe </li>
+   <li>[ x ] FEATURE / Criar os componentes principais dentro dos padrões estabelecidos com nomes e pastas Cabecalho, Rodape e Menu / Biribilli+Pietro+PedroC</li>
+   <li>[ x ] FEATURE / Criação de conteúdo dinâmico na Home - sistema de notícias(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
+   <li>[ x ] FEATURE / Criação de conteúdo dinâmico na Home - Alteração para a API OUL de Saúde(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
+   <li>[ x ] FEATURE / Criar estrutura de rotas e registrar estas rotas no main, lembrar os dev do menu de quais rotas devem criar, as rotas inicias devem ser: Login, Cadastro. /Luna+GustavoK+FelipeM+Alisson</li>
+   <li>[ x ] FEATURE / Criar um compodente CardRemedio e a Página Remédios/Andrei+Manuela+Felipe </li>
+   <li>[ x ] FEATURE /Arrumar o Cabecalho / Menu, colocar o link da página Remédios e configurar dentro no App.tsx/Andrei+Manu+Felipe
+   </li>
+   <li>[  x ] FEATURE / Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
 
-<li><span style="color:red">[ x ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Arthur+Diogo+LeonardoR - corrigido e implementado pela equipe de bugfix </span></li>
+   <li><span style="color:red">[ x ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Arthur+Diogo+LeonardoR - corrigido e implementado pela equipe de bugfix </span></li>
+
+</ul>
 ---
 
 ## EM HOMOLOGAÇÃO:
 <ul style="color:orange">
 
+   <li>[   ] FEATURE / Criar uma api com json-server, o endpoint de nome usuarios, os dados do endpoint são [id,nome,nomeUser,email,avatar]/GustavoM+EnzoR+Luiz </li> não fez
 
-<li>[   ] FEATURE / Criar uma api com json-server, o endpoint de nome usuarios, os dados do endpoint são [id,nome,nomeUser,email,avatar]/GustavoM+EnzoR+Luiz </li>
+   <li>[  ] FEATURE / Melhorar e estilizar o compodente CardRemedio e a Página Remédios/ Luna+GustavoK+FelipeM+Alisson
+   </li> verificar
 
+   <li>[   ] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem]/ Murillo+PedroM+jojo</li> nao fez
 
+   <li>[   ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Murillo+PedroM+LeonardoZ</li> não fez 
 
+   <li>[   ] FEATURE / Estilizar os componentes Menu e o Rodape / thiagoA, GabrielL</li> não fez
 
    <li> ...</li>
 </ul>
@@ -38,17 +48,20 @@
 ---
 ## EM DESENVOLVIMENTO:
 <ul style="color:yellow">
-   <li>[   ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Murillo+PedroM+LeonardoZ</li>
-   <li>[   ] FEATURE / Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
-   <li>[   ] FEATURE / Estilizar os componentes Menu e o Rodape / thiagoA, GabrielL</li>
-   <li>[   ] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem]/ Murillo+PedroM+jojo</li>
-   <li>[  ] FEATURE /Arrumar o Cabecalho / Menu, colocar o link da página Remédios e configurar dentro no App.tsx/Andrei+Manu+Felipe
+
+   <li>[ ] FEATURE / Criar uma api com json-server, o endpoint de nome usuarios, os dados do endpoint são [id,nome,nomeUser,email,avatar]/ GabrielSbrana+Moisés+Thiago
    </li>
-   <li>[  ] FEATURE / Melhorar e estilizar o compodente CardRemedio e a Página Remédios/ Luna+GustavoK+FelipeM+Alisson
+
+   <li>[   ] FEATURE / Estilizar os componentes Cabecalho e o Rodape / Pietro </li>
+
+   <li>[   ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Tarefa passada para a equipe de Bugfiz refazer - Pietro </li>
+
+   <li>[ ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Luna+GustavoK+Alisson
+   </li>
+
+   <li>[ ] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem]/ Andrei+Manuela+Felipe
    </li>
    
-   
-  
 
 </ul>
 
