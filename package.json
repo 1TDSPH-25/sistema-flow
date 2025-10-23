@@ -1,4 +1,5 @@
 {
+  "homepage": "https://1tdsph.github.io/sistema-flow/", 
   "name": "sistema-flow",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,9 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "api": "json-server --watch db.json --port 3001"
+    "api": "json-server --watch db.json --port 3001",
+    "predeploy": "tsc -b && vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -37,4 +40,5 @@
     "typescript-eslint": "^8.45.0",
     "vite": "^7.1.7"
   }
+  
 }
