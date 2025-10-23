@@ -54,12 +54,12 @@
 
    <li>[   ] FEATURE / Estilizar os componentes Cabecalho e o Rodape / Pietro </li>
 
-   <li>[   ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Tarefa passada para a equipe de Bugfiz refazer - Pietro </li>
+   <li>[   ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Tarefa passada para a equipe de Bugfix refazer - Pietro </li>
 
    <li>[ ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Luna+GustavoK+Alisson
    </li>
 
-   <li>[ ] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem]/ Andrei+Manuela+Felipe
+   <li>[ ] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem] Página Remedios completa e estilizada./ Andrei+Manuela+Felipe
    </li>
    
 
