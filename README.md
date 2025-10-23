@@ -23,6 +23,7 @@
    </li>
    <li>[ x ] FEATURE / Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
    <li><span style="color:red">[ x ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Tarefa passada para a equipe de Bugfix refazer - Pietro </li>
+   <li><span style="color:red">[ x ] FEATURE / Estilizar os componentes Cabecalho e o Rodape / Pietro </li>
 
 </ul>
 ---
@@ -50,9 +51,6 @@
 
    <li>[ ] FEATURE / Criar uma api com json-server, o endpoint de nome usuarios, os dados do endpoint são [id,nome,nomeUser,email,avatar]/ GabrielSbrana+Moisés+Thiago
    </li>
-
-   <li>[   ] FEATURE / Estilizar os componentes Cabecalho e o Rodape / Pietro </li>
-
    <li>[ ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Luna+GustavoK+Alisson
    </li>
 
