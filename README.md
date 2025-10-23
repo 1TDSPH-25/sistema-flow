@@ -13,9 +13,6 @@
 <ul style="color:green">
 <li>[ x ] FEATURE / Realizar a lista de tarefas no README.md / prof.Alexandre </li>
 <li>[ x ] FEATURE / Criar o projeto (VITE+REACT+TS) do zero / prof.Alexandre </li>
-<<<<<<< HEAD
-</ul>
-=======
 <li>[ x ] FEATURE / Limpar o boiler-plate e instalar os pacotes react-router-dom, tailwindcss, json-server, react-icons, react-use-form/Andrei+Manuela+Felipe </li>
 <li>[ x ] FEATURE / Criar os componentes principais dentro dos padrões estabelecidos com nomes e pastas Cabecalho, Rodape e Menu / Biribilli+Pietro+PedroC</li>
 <li>[ x ] FEATURE / Criação de conteúdo dinâmico na Home - sistema de notícias(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
@@ -25,20 +22,10 @@
 
 <li><span style="color:red">[ x ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Arthur+Diogo+LeonardoR - corrigido e implementado pela equipe de bugfix </span></li>
 ---
->>>>>>> main
 
 ---
 ## EM HOMOLOGAÇÃO:
 <ul style="color:orange">
-<<<<<<< HEAD
-<li>[   ] FEATURE / Limpar o boiler-plate e instalar os pacotes react-router-dom, tailwindcss, json-server, react-icons, react-use-form/Andrei+Manuela+Isabela </li>
-<li>[   ] FEATURE / Criar os componentes principais dentro dos padrões estabelecidos com nomes e pastas Cabecalho, Rodape e Menu / Biribilli+Pietro+PedroC</li>
-<li>[   ] FEATURE / Criar estrutura de rotas e registrar estas rotas no main, lembrar os dev do menu de quais rotas devem criar, as rotas inicias devem ser: Login, Cadastro. /Luna+GustavoK+FelipeM+Alisson</li>
-<li>[   ] FEATURE / Criar uma api com json-server, o endpoint de nome usuarios, os dados do endpoint são [id,nome,nomeUser,email,avatar]/LeonardoR+EnzoR+Luiz </li>
-<li>[   ] FEATURE / Criação de conteúdo dinâmico na Home - sistema de notícias(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
-<li>[   ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Arthur+Diogo+GustavoM  </li>
-<li>[   ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Murillo+PedroM+LeonardoZ</li>
-=======
 
 
 <li>[   ] FEATURE / Criar uma api com json-server, o endpoint de nome usuarios, os dados do endpoint são [id,nome,nomeUser,email,avatar]/GustavoM+EnzoR+Luiz </li>
@@ -46,21 +33,12 @@
 
 
 
->>>>>>> main
    <li> ...</li>
 </ul>
 
 ---
 ## EM DESENVOLVIMENTO:
 <ul style="color:yellow">
-<<<<<<< HEAD
-   li> ...</li>
-</ul>
-
-## TIME FREE
-[Huguinho, Zezinho, Luizinho]
-[Huguinho, Zezinho, Luizinho]
-=======
    <li>[   ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Murillo+PedroM+LeonardoZ</li>
    <li>[   ] FEATURE / Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
    <li>[   ] FEATURE / Estilizar os componentes Menu e o Rodape / thiagoA, GabrielL</li>
@@ -77,4 +55,3 @@
 
 ## TIME FREE
 
->>>>>>> main
