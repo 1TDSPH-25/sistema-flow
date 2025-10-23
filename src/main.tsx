@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     {path: "/cadastro", element: <Cadastro/>},
     {path: "/remedios", element: <PaginaRemedios />}
   ]}
-])
+], {basename:"/sistema-flow"});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
