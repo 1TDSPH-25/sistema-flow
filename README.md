@@ -21,9 +21,8 @@
    <li>[ x ] FEATURE / Criar um compodente CardRemedio e a Página Remédios/Andrei+Manuela+Felipe </li>
    <li>[ x ] FEATURE /Arrumar o Cabecalho / Menu, colocar o link da página Remédios e configurar dentro no App.tsx/Andrei+Manu+Felipe
    </li>
-   <li>[  x ] FEATURE / Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
-
-   <li><span style="color:red">[ x ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Arthur+Diogo+LeonardoR - corrigido e implementado pela equipe de bugfix </span></li>
+   <li>[ x ] FEATURE / Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago</li>
+   <li><span style="color:red">[ x ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Tarefa passada para a equipe de Bugfix refazer - Pietro </li>
 
 </ul>
 ---
@@ -53,8 +52,6 @@
    </li>
 
    <li>[   ] FEATURE / Estilizar os componentes Cabecalho e o Rodape / Pietro </li>
-
-   <li>[   ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Tarefa passada para a equipe de Bugfix refazer - Pietro </li>
 
    <li>[ ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Luna+GustavoK+Alisson
    </li>
