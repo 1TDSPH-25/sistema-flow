@@ -48,7 +48,7 @@
 | [ &nbsp;] | Criar API com `json-server` (endpoint: `usuarios` - dados: `[id, nome, nomeUser, email, avatar]`) | GustavoM, EnzoR, Luiz | **Não fez** |
 | [ &nbsp;] | Melhorar e estilizar o componente `CardRemedio` e a Página **Remédios** | Luna, GustavoK, FelipeM, Alisson | Verificar |
 | [ &nbsp;] | Criar e preencher a API com `json-server` (endpoint: `remedios` - dados: `[id, nome, descricao, dataFabricacao, dataValidade, imagem]`) | Murillo, PedroM, Jojo | **Não fez** |
-| [ &nbsp;] | Criar componente de **Cadastro** (formulário, validação de `useForms`, estilizado) | Murillo, PedroM, LeonardoZ | **Não fez** |
+| [ &nbsp;] | Criar componente de **Cadastro** (formulário, validação de `useForms`, estilizado) | Murillo, PedroM, LeonardoZ | **atrasado** |
 
 ---
 
@@ -57,7 +57,7 @@
 
 | Status | Descrição da Feature | Responsáveis |
 | :---: | :--- | :--- |
-| [ &nbsp;] | Criar API com `json-server` (endpoint: `usuarios` - dados: `[id, nome, nomeUser, email, avatar]`) | GabrielSbrana, Moisés, Thiago |
+| [ &nbsp;] | Criar API (lista mockada) (endpoint: `usuarios` - dados: `[id, nome, nomeUser, email, avatar]`) | GabrielSbrana, Moisés, Thiago |
 | [ &nbsp;] | Criar componente de **Cadastro** (formulário, validação de `useForms`, estilizado) | Luna, GustavoK, Alisson |
 | [ &nbsp;] | Fazer um *Menu Hamburger* responsivo e colocar uma *logo* para o site | Murillo, LeonardoZ, João |
 | [ &nbsp;] | Atualizar API da aplicação para uma API de remédios externa Página Remedios completa e estilizada | Manu, Felipe, Andrei |
