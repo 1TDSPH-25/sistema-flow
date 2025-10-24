@@ -1,5 +1,5 @@
 {
-  "homepage": "https://1tdsph.github.io/sistema-flow/", 
+  "homepage": "https://1tdsph.github.io/sistema-flow/",
   "name": "sistema-flow",
   "private": true,
   "version": "0.0.0",
@@ -40,5 +40,4 @@
     "typescript-eslint": "^8.45.0",
     "vite": "^7.1.7"
   }
-  
 }

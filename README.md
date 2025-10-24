@@ -1,63 +1,68 @@
-# FEATURES LIST:
+# PAINEL DE CONTROLE DE FEATURES
 
-## Todas as TAREFAS/FEATURES devem ser finalizadas.
-### Prestar atenção ao <span style="color:red">DEADLINE</span> das FEATURES. 
-
-### RESPONSABILIDADES:
-## MENTORIA    : PROF.ALEXANDRE
-## TECHLEAD    : ISABELA
-## HOMOLOGADOR : BIRIBILLI
+## STATUS GERAL
+**Todas as TAREFAS/FEATURES devem ser finalizadas.**
+### Prestar atenção ao <span style="color:red; font-weight:bold;">DEADLINE</span> das FEATURES.
 
 ---
-## IMPLEMENTADOS:
-<ul style="color:green">
-   <li>[ x ] FEATURE / Realizar a lista de tarefas no README.md / prof.Alexandre </li>
-   <li>[ x ] FEATURE / Criar o projeto (VITE+REACT+TS) do zero / prof.Alexandre </li>
-   <li>[ x ] FEATURE / Limpar o boiler-plate e instalar os pacotes react-router-dom, tailwindcss, json-server, react-icons, react-use-form/Andrei+Manuela+Felipe </li>
-   <li>[ x ] FEATURE / Criar os componentes principais dentro dos padrões estabelecidos com nomes e pastas Cabecalho, Rodape e Menu / Biribilli+Pietro+PedroC</li>
-   <li>[ x ] FEATURE / Criação de conteúdo dinâmico na Home - sistema de notícias(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
-   <li>[ x ] FEATURE / Criação de conteúdo dinâmico na Home - Alteração para a API OUL de Saúde(Colocar uma api publica trocando cards de noticias)Peguem exemplos em sites como UOL, TERRA e MSN / GabrielSbrana+Moisés+Thiago  </li>
-   <li>[ x ] FEATURE / Criar estrutura de rotas e registrar estas rotas no main, lembrar os dev do menu de quais rotas devem criar, as rotas inicias devem ser: Login, Cadastro. /Luna+GustavoK+FelipeM+Alisson</li>
-   <li>[ x ] FEATURE / Criar um compodente CardRemedio e a Página Remédios/Andrei+Manuela+Felipe </li>
-   <li>[ x ] FEATURE /Arrumar o Cabecalho / Menu, colocar o link da página Remédios e configurar dentro no App.tsx/Andrei+Manu+Felipe
-   </li>
-   <li>[ x ] FEATURE / Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home / GabrielSbrana+Moisés+Thiago
-   </li>
-   <li>[x] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem] Página Remedios completa e estilizada./ Andrei+Manuela+Felipe
-   </li>
-   <li><span style="color:red">[ x ] FEATURE / Criar componente de Login(Criar formulário, com validação de useForms, estilizado) / Tarefa passada para a equipe de Bugfix refazer - Pietro </li>
-   <li><span style="color:red">[ x ] FEATURE / Estilizar os componentes Cabecalho e o Rodape / Tarefa passada para a equipe de Bugfix refazer - Pietro </li>
 
-</ul>
----
-
-## EM HOMOLOGAÇÃO:
-<ul style="color:orange">
-
-   <li>[   ] FEATURE / Criar uma api com json-server, o endpoint de nome usuarios, os dados do endpoint são [id,nome,nomeUser,email,avatar]/GustavoM+EnzoR+Luiz </li> não fez
-
-   <li>[  ] FEATURE / Melhorar e estilizar o compodente CardRemedio e a Página Remédios/ Luna+GustavoK+FelipeM+Alisson
-   </li> verificar
-
-   <li>[   ] FEATURE / Criar e preencher uma api com json-server, o endpoint de nome remedios, os dados do endpoint são [id,nome,descricao,dataFabricacao, dataValidade,imagem]/ Murillo+PedroM+jojo</li> nao fez
-
-   <li>[   ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Murillo+PedroM+LeonardoZ</li> não fez 
-
-   <li>[   ] FEATURE / Estilizar os componentes Menu e o Rodape / thiagoA, GabrielL</li> não fez
-
-   <li> ...</li>
-</ul>
+### RESPONSABILIDADES DO PROJETO
+| Papel | Responsável |
+| :--- | :--- |
+| **MENTORIA** | PROF. ALEXANDRE |
+| **TECH LEAD** | ISABELA |
+| **HOMOLOGADOR** | BIRIBILLI |
 
 ---
-## EM DESENVOLVIMENTO:
-<ul style="color:yellow">
 
-   <li>[ ] FEATURE / Criar uma api com json-server, o endpoint de nome usuarios, os dados do endpoint são [id,nome,nomeUser,email,avatar]/ GabrielSbrana+Moisés+Thiago
-   </li>
-   <li>[ ] FEATURE / Criar componente de Cadastro (Criar formulário, com validação de useForms, estilizado)/ Luna+GustavoK+Alisson
-   </li>
+## ✅ FEATURES IMPLEMENTADAS (CONCLUÍDAS)
 
-</ul>
+| ID | Descrição da Feature | Responsáveis |
+| :---: | :--- | :--- |
+| **F01** | Realizar a lista de tarefas no README.md | prof.Alexandre |
+| **F02** | Criar o projeto (VITE+REACT+TS) do zero | prof.Alexandre |
+| **F03** | Limpar o boiler-plate e instalar pacotes: `react-router-dom`, `tailwindcss`, `json-server`, `react-icons`, `react-use-form` | Andrei, Manuela, Felipe |
+| **F04** | Criar componentes principais (`Cabecalho`, `Rodape`, `Menu`) seguindo os padrões estabelecidos | Biribilli, Pietro, PedroC |
+| **F05** | Conteúdo dinâmico na Home - sistema de notícias (API pública, cards de notícias - UOL, TERRA, MSN) | GabrielSbrana, Moisés, Thiago |
+| **F06** | Conteúdo dinâmico na Home - Alteração para a API OUL de Saúde | GabrielSbrana, Moisés, Thiago |
+| **F07** | Estrutura de rotas: criar e registrar no `main`. Rotas iniciais: **Login** e **Cadastro** | Luna, GustavoK, FelipeM, Alisson |
+| **F08** | Criar componente `CardRemedio` e a Página **Remédios** | Andrei, Manuela, Felipe |
+| **F09** | Arrumar `Cabecalho`/`Menu`, colocar o link da página Remédios e configurar no `App.tsx` | Andrei, Manu, Felipe |
+| **F10** | Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home | GabrielSbrana, Moisés, Thiago |
+| **F11** | Criar e preencher a API com `json-server` (endpoint: `remedios` - dados: `[id, nome, descricao, dataFabricacao, dataValidade, imagem]`). Página Remédios completa e estilizada. | Andrei, Manuela, Felipe |
 
-## TIME FREE
+---
+**## ✅ FEATURES IMPLEMENTADAS PELO BUGFIX (CONCLUÍDAS)**
+| ID | Descrição da Feature | Responsáveis |
+| :---: | :--- | :--- |
+| <span style="color:red; font-weight:bold;">F12</span> | Criar componente de **Login** (formulário, validação de `useForms`, estilizado). *Tarefa passada para a equipe de Bugfix refazer.* | Pietro |
+| <span style="color:red; font-weight:bold;">F13</span> | Estilizar os componentes **Cabecalho** e **Rodape**. *Tarefa passada para a equipe de Bugfix refazer.* | Pietro |
+| <span style="color:red; font-weight:bold;">F14</span> | Estilizar os componentes **Menu** e **Rodape**. *Tarefa passada para a equipe de Bugfix refazer.* | Pietro |
+---
 
+## 🟠 FEATURES EM HOMOLOGAÇÃO
+<p style="color:orange; font-weight:bold;"> Features Aguardando Aprovação do Homologador (Biribilli)</p>
+
+| Status | Descrição da Feature | Responsáveis | Observação |
+| :---: | :--- | :--- | :--- |
+| [ &nbsp;] | Criar API com `json-server` (endpoint: `usuarios` - dados: `[id, nome, nomeUser, email, avatar]`) | GustavoM, EnzoR, Luiz | **Não fez** |
+| [ &nbsp;] | Melhorar e estilizar o componente `CardRemedio` e a Página **Remédios** | Luna, GustavoK, FelipeM, Alisson | Verificar |
+| [ &nbsp;] | Criar e preencher a API com `json-server` (endpoint: `remedios` - dados: `[id, nome, descricao, dataFabricacao, dataValidade, imagem]`) | Murillo, PedroM, Jojo | **Não fez** |
+| [ &nbsp;] | Criar componente de **Cadastro** (formulário, validação de `useForms`, estilizado) | Murillo, PedroM, LeonardoZ | **Não fez** |
+
+---
+
+## 🟡 FEATURES EM DESENVOLVIMENTO
+<p style="color:yellow; font-weight:bold;"> Features Ativamente em Desenvolvimento (Definidas pela TechLead - Isabela)</p>
+
+| Status | Descrição da Feature | Responsáveis |
+| :---: | :--- | :--- |
+| [ &nbsp;] | Criar API com `json-server` (endpoint: `usuarios` - dados: `[id, nome, nomeUser, email, avatar]`) | GabrielSbrana, Moisés, Thiago |
+| [ &nbsp;] | Criar componente de **Cadastro** (formulário, validação de `useForms`, estilizado) | Luna, GustavoK, Alisson |
+
+---
+
+## 🟢 TIME LIVRE
+<p style="color:green; font-weight:bold;">Equipe disponível para novas tarefas ou apoio.</p>
+
+* ...
