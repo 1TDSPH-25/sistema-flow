@@ -13,6 +13,10 @@
     @apply w-screen overflow-auto;
   }
 
+  .opcao {
+    @apply flex justify-center transition-all max-w-10 max-h-6 px-10 py-6 items-center rounded-lg shadow-lg bg-gray-300 font-semibold;
+  }
+
   .cardNoticia {
     @apply border border-gray-500 rounded-lg shadow-lg bg-gray-300 transition-all text-center flex flex-col items-center;
 
