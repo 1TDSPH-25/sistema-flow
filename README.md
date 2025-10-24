@@ -58,7 +58,7 @@
 | Status | Descrição da Feature | Responsáveis |
 | :---: | :--- | :--- |
 | [ &nbsp;] | Criar API (lista mockada) (endpoint: `usuarios` - dados: `[id, nome, nomeUser, email, avatar]`) | GabrielSbrana, Moisés, Thiago |
-| [ &nbsp;] | Criar componente de **Cadastro** (formulário, validação de `useForms`, estilizado) | Luna, GustavoK, Alisson |
+| [ &nbsp;] | Criar conteúdo para a página Home com icones, links de navegação e imagens (deixar estilizada e finalizada)| Luna, GustavoK, Alisson |
 | [ &nbsp;] | Fazer um *Menu Hamburger* responsivo e colocar uma *logo* para o site | Murillo, LeonardoZ, João |
 | [ &nbsp;] | Atualizar API da aplicação para uma API de remédios externa Página Remedios completa e estilizada | Manu, Felipe, Andrei |
 ---
