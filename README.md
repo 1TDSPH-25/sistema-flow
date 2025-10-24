@@ -59,7 +59,8 @@
 | :---: | :--- | :--- |
 | [ &nbsp;] | Criar API com `json-server` (endpoint: `usuarios` - dados: `[id, nome, nomeUser, email, avatar]`) | GabrielSbrana, Moisés, Thiago |
 | [ &nbsp;] | Criar componente de **Cadastro** (formulário, validação de `useForms`, estilizado) | Luna, GustavoK, Alisson |
-
+| [ &nbsp;] | Fazer um *Menu Hamburger* responsivo e colocar uma *logo* para o site | Murillo, LeonardoZ, João |
+| [ &nbsp;] | Atualizar API da aplicação para uma API de remédios externa Página Remedios completa e estilizada | Manu, Felipe, Andrei |
 ---
 
 ## 🟢 TIME LIVRE
