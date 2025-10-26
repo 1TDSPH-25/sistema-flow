@@ -3,7 +3,7 @@ export default function Home() {
     <main className="home-page">
       <section className="home-banner">
         <div className="home-banner-content">
-          <h2>Queridinhos da Rede</h2>
+          <h2>Promoções dos Dia!</h2>
           <p>Com até 30% de desconto. Aproveite!</p>
           <a href="#" className="cta-button">
             Confira
@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           <div className="category-card">
             <div className="category-card-icon"></div>
-            <p>Suas ofertas</p>
+            <p>Nossas ofertas</p>
           </div>
           <div className="category-card">
             <div className="category-card-icon"></div>
@@ -28,7 +28,7 @@ export default function Home() {
           </div>
           <div className="category-card">
             <div className="category-card-icon"></div>
-            <p>Queridinhos da Internet</p>
+            <p>As melhores opções para você</p>
           </div>
           <div className="category-card">
             <div className="category-card-icon"></div>

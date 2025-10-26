@@ -27,6 +27,48 @@
       @apply bg-blue-800 text-white;
     }
   }
+  .home-page {
+  @apply w-full p-8 bg-white;
+}
+  .home-banner {
+    @apply bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-12 flex flex-col items-center justify-center text-center min-h-[300px] mb-12 shadow-md;
+  }
+
+  .home-banner-content h2 {
+    @apply text-4xl font-bold text-gray-900 mb-4;
+  }
+
+  .home-banner-content p {
+    @apply text-lg text-gray-700 mb-6;
+  }
+  
+  .home-banner-content .cta-button {
+    @apply bg-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 transition-colors shadow-lg;
+  }
+
+  .category-section {
+    @apply mb-12;
+  }
+
+  .category-title {
+    @apply text-2xl font-semibold text-gray-800 text-center mb-6;
+  }
+
+  .category-grid {
+    @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6;
+  }
+  
+  .category-card {
+    @apply flex flex-col items-center justify-center p-4 bg-gray-50 rounded-lg shadow-md hover:shadow-lg hover:bg-white transition-all duration-300 cursor-pointer;
+  }
+
+  .category-card-icon {
+    @apply w-16 h-16 bg-gray-200 rounded-full mb-3;
+  }
+
+  .category-card p {
+    @apply font-medium text-gray-700 text-sm text-center;
+  }
 }
   .remedios-page {
     @apply min-h-screen bg-gray-100 p-8;
@@ -83,3 +125,7 @@
   .remedios-empty {
     @apply text-center text-gray-500;
   }
+
+.home-page {
+  @apply w-full p-8 bg-white;
+}
