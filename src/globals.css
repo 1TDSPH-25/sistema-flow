@@ -13,6 +13,19 @@
     @apply w-screen overflow-auto;
   }
 
+  /* Utilitários de acessibilidade */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
   .cardNoticia {
     @apply border border-gray-500 rounded-lg shadow-lg bg-gray-300 transition-all text-center flex flex-col items-center;
 
