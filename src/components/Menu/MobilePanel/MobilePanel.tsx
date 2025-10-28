@@ -9,16 +9,26 @@ export default function MobilePanel() {
     return (
         <div
             id="mobile-menu"
-            role="menu"
+            role="dialog"
+            aria-modal="true"
             aria-label="Menu móvel"
-            className="sm:hidden absolute right-4 top-full mt-2 w-56 rounded-md bg-white text-gray-900 shadow-lg ring-1 ring-black/10 focus:outline-none z-50"
+            className="sm:hidden fixed inset-0 z-50"
         >
-            <nav className="flex flex-col p-2" onClick={close}>
-                <Link to="/" className="px-3 py-2 rounded hover:bg-gray-100" role="menuitem">Home</Link>
-                <Link to="/login" className="px-3 py-2 rounded hover:bg-gray-100" role="menuitem">Login</Link>
-                <Link to="/cadastro" className="px-3 py-2 rounded hover:bg-gray-100" role="menuitem">Cadastro</Link>
-                <Link to="/remedios" className="px-3 py-2 rounded hover:bg-gray-100" role="menuitem">Remédios</Link>
-            </nav>
+            <div className="absolute inset-0 bg-black/90" onClick={close} aria-hidden></div>
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+                <nav className="flex flex-col items-center gap-6 text-xl font-semibold" onClick={close}>
+                    <Link to="/" className="hover:opacity-80" role="menuitem">HOME</Link>
+                    <Link to="/login" className="hover:opacity-80" role="menuitem">LOGIN</Link>
+                    <Link to="/cadastro" className="hover:opacity-80" role="menuitem">CADASTRO</Link>
+                    <Link to="/remedios" className="hover:opacity-80" role="menuitem">REMÉDIOS</Link>
+                </nav>
+                <div className="mt-10 flex items-center gap-6 text-2xl opacity-90">
+                    <a href="#" aria-label="Facebook" className="hover:opacity-70">⬤</a>
+                    <a href="#" aria-label="Instagram" className="hover:opacity-70">⬤</a>
+                    <a href="#" aria-label="Twitter" className="hover:opacity-70">⬤</a>
+                    <a href="#" aria-label="GitHub" className="hover:opacity-70">⬤</a>
+                </div>
+            </div>
         </div>
     );
 }
