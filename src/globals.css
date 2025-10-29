@@ -27,7 +27,7 @@ body {
 
   .cardNoticia {
     @apply border border-gray-500 rounded-lg shadow-lg bg-gray-300 transition-all text-center flex flex-col items-center;
-
+  }
   /* ---------- Página de Cadastro ---------- */
   .cadastro-container {
     @apply min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 p-6 overflow-x-hidden;
