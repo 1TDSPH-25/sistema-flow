@@ -107,21 +107,6 @@ export default function PaginaCadastro() {
             {errors.senha && <p className="text-red-500 text-sm mt-1">{String(errors.senha.message)}</p>}
           </div>
 
-          {/* Confirmar Senha */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">Confirmar Senha</label>
-            <input
-              type="password"
-              {...register("confirmarSenha", {
-                required: "Confirmação de senha é obrigatória",
-                validate: (value, formValues) => value === formValues.senha || "As senhas não coincidem"
-              })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
-              placeholder="Confirme sua senha"
-            />
-            {errors.confirmarSenha && <p className="text-red-500 text-sm mt-1">{String(errors.confirmarSenha.message)}</p>}
-          </div>
-
           {/* Data de Nascimento */}
           <div>
             <label className="block text-sm font-medium mb-2 text-gray-700">Data de Nascimento</label>
@@ -139,80 +124,6 @@ export default function PaginaCadastro() {
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
             />
             {errors.dataNascimento && <p className="text-red-500 text-sm mt-1">{String(errors.dataNascimento.message)}</p>}
-          </div>
-
-          {/* CEP */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">CEP</label>
-            <input
-              type="text"
-              {...register("cep", {
-                required: "CEP é obrigatório",
-                pattern: {
-                  value: /^\d{5}-?\d{3}$/,
-                  message: "Formato: 12345-678"
-                }
-              })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
-              placeholder="12345-678"
-            />
-            {errors.cep && <p className="text-red-500 text-sm mt-1">{String(errors.cep.message)}</p>}
-          </div>
-
-          {/* Cidade */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">Cidade</label>
-            <input
-              type="text"
-              {...register("cidade", {
-                required: "Cidade é obrigatória",
-                minLength: { value: 2, message: "Nome da cidade deve ter pelo menos 2 caracteres" }
-              })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
-              placeholder="São Paulo"
-            />
-            {errors.cidade && <p className="text-red-500 text-sm mt-1">{String(errors.cidade.message)}</p>}
-          </div>
-
-          {/* Estado */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">Estado</label>
-            <select
-              {...register("estado", {
-                required: "Estado é obrigatório"
-              })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
-            >
-              <option value="">Selecione seu estado</option>
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="PI">Piauí</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-              <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-              <option value="SP">São Paulo</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-            </select>
-            {errors.estado && <p className="text-red-500 text-sm mt-1">{String(errors.estado.message)}</p>}
           </div>
 
           {/* Gênero */}
