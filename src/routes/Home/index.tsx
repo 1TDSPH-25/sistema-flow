@@ -4,6 +4,10 @@ import pilulas from "../../assets/pilulas.png";
 import estrela from "../../assets/estrela.png";
 import cupom from "../../assets/cupom.png"
 import almofariz from "../../assets/almofariz-e-pilao.png";
+import acetil from "../../assets/acetilcisteina.png";
+import fralda from "../../assets/pampers.png";
+import sensor from "../../assets/sensor.png";
+import suplemento from "../../assets/suplemento.png";
 
 export default function Home() {
   return (
@@ -77,14 +81,76 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="text-center p-16 bg-gray-50 rounded-lg">
-        <h3 className="text-2xl font-semibold text-gray-700">
-          Mais seções em breve
-        </h3>
-        <p className="text-gray-500 mt-2">
-          Esta é uma página de exemplo. Mais conteúdo, como listas de produtos,
-          seria adicionado aqui.
-        </p>
+      <section className="featured-products-section">
+        <h3 className="category-title">Produtos em Destaque</h3>
+        
+        <div className="remedios-grid">
+          <div className="remedio-card">
+            <div className="remedio-card-image-container">
+              <img
+                src={sensor} 
+                alt="Imagem do Sensor de Monitoramento de Glicose"
+                className="remedio-card-image"
+              />
+            </div>
+            
+            <div className="remedio-card-body">
+              <h2 className="remedio-card-title">Sensor de Monitoramento de Glicose FreeStyle Libre</h2>
+              <span className="remedio-card-quantity">23 unidades</span>
+              <p className="remedio-card-price">R$ 329,90</p>
+            </div>
+          </div>
+
+        
+          <div className="remedio-card">
+            <div className="remedio-card-image-container">
+              <img
+                src={fralda} 
+                alt="Imagem da Fralda Pampers Confort Sec"
+                className="remedio-card-image"
+              />
+            </div>
+            
+            <div className="remedio-card-body">
+              <h2 className="remedio-card-title">Fralda Pampers Confort Sec XG</h2>
+              <span className="remedio-card-quantity">92 unidades</span>
+              <p className="remedio-card-price">R$ 129,90</p>
+            </div>
+          </div>
+     
+          <div className="remedio-card">
+            <div className="remedio-card-image-container">
+              <img
+                src={acetil} 
+                alt="Imagem do Acetilcisteína 600mg"
+                className="remedio-card-image"
+              />
+            </div>
+            
+            <div className="remedio-card-body">
+              <h2 className="remedio-card-title">Acetilcisteína 600mg Laranja bwell</h2>
+              <span className="remedio-card-quantity">Restam 6 unidades</span>
+              <p className="remedio-card-price">R$ 26,59</p>
+            </div>
+          </div>
+
+          <div className="remedio-card">
+            <div className="remedio-card-image-container">
+              <img
+                src={suplemento} 
+                alt="Imagem do Suplemento Probiótico Infantil Colidis"
+                className="remedio-card-image"
+              />
+            </div>
+            
+            <div className="remedio-card-body">
+              <h2 className="remedio-card-title">Suplemento Probiótico Infantil Colidis Gotas 10ml</h2>
+              <span className="remedio-card-quantity">48 unidades</span>
+              <p className="remedio-card-price">R$ 165,99</p>
+            </div>
+          </div>
+
+        </div>
       </section>
     </main>
   );
