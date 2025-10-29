@@ -72,7 +72,7 @@ export default function PaginaCadastro() {
           {/* Botão */}
           <button
             type="submit"
-            className="w-full bg-emerald-500 text-white font-semibold p-3 rounded-lg shadow-md hover:bg-emerald-600 hover:shadow-lg transition-all duration-200"
+            className="w-full bg-blue-500 text-white font-semibold p-3 rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-200"
           >
             Cadastrar
           </button>
