@@ -69,6 +69,24 @@ export default function PaginaCadastro() {
             />
             {errors.email && <p className="text-red-500 text-sm mt-1">{String(errors.email.message)}</p>}
           </div>
+
+          {/* Telefone */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Telefone</label>
+            <input
+              type="tel"
+              {...register("telefone", {
+                required: "Telefone é obrigatório",
+                pattern: {
+                  value: /^\(\d{2}\)\s\d{4,5}-\d{4}$/,
+                  message: "Formato: (11) 99999-9999"
+                }
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              placeholder="(11) 99999-9999"
+            />
+            {errors.telefone && <p className="text-red-500 text-sm mt-1">{String(errors.telefone.message)}</p>}
+          </div>
           {/* Botão */}
           <button
             type="submit"
