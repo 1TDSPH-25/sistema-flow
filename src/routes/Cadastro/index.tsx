@@ -9,7 +9,7 @@ export default function PaginaCadastro() {
 }
  return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-300 via-blue-400 to-blue-600 p-4">
-      <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl w-full max-w-md transition-all hover:shadow-green-300/50">
+      <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl w-full max-w-md transition-all hover:shadow-blue-300/50">
         <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
           Crie sua conta 🌿
         </h1>
@@ -27,7 +27,7 @@ export default function PaginaCadastro() {
                 required: "Nome é obrigatório",
                 minLength: { value: 3, message: "O nome deve ter pelo menos 3 caracteres." }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
               placeholder="Ex: João Silva"
             />
             {errors.nome && <p className="text-red-500 text-sm mt-1">{String(errors.nome.message)}</p>}
@@ -46,7 +46,7 @@ export default function PaginaCadastro() {
                 },
                 minLength: { value: 3, message: "Mínimo de 3 caracteres." }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
               placeholder="Ex: joaosilva"
             />
             {errors.nomeUsuario && <p className="text-red-500 text-sm mt-1">{String(errors.nomeUsuario.message)}</p>}
@@ -64,7 +64,7 @@ export default function PaginaCadastro() {
                   message: "Insira um email válido."
                 }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
               placeholder="exemplo@email.com"
             />
             {errors.email && <p className="text-red-500 text-sm mt-1">{String(errors.email.message)}</p>}
