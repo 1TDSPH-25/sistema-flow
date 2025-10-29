@@ -1,10 +1,21 @@
 import { Link } from "react-router-dom";
 import { useMenu } from "../hooks/useMenu";
+import React, { useEffect } from 'react';
+import { FaFacebookF, FaInstagram, FaTwitter, FaGithub, FaHome, FaSignInAlt, FaUserPlus, FaPills } from 'react-icons/fa';
 
-export default function MobilePanel() {
+export default function MobilePanel(): React.ReactElement {
     const { isOpen, close } = useMenu();
 
-    if (!isOpen) return null;
+    useEffect(() => {
+        if (typeof document !== 'undefined') {
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        }
+        return () => {
+            if (typeof document !== 'undefined') {
+                document.body.style.overflow = '';
+            }
+        };
+    }, [isOpen]);
 
     return (
         <div
@@ -12,21 +23,85 @@ export default function MobilePanel() {
             role="dialog"
             aria-modal="true"
             aria-label="Menu móvel"
-            className="sm:hidden fixed inset-0 z-50"
+            className={`sm:hidden fixed inset-0 z-50 transition-opacity duration-300 ${
+                isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
         >
-            <div className="absolute inset-0 bg-black/90" onClick={close} aria-hidden></div>
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-                <nav className="flex flex-col items-center gap-6 text-xl font-semibold" onClick={close}>
-                    <Link to="/" className="hover:opacity-80" role="menuitem">HOME</Link>
-                    <Link to="/login" className="hover:opacity-80" role="menuitem">LOGIN</Link>
-                    <Link to="/cadastro" className="hover:opacity-80" role="menuitem">CADASTRO</Link>
-                    <Link to="/remedios" className="hover:opacity-80" role="menuitem">REMÉDIOS</Link>
+            <div 
+                className={`absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/95 to-gray-900 backdrop-blur-sm transition-all duration-500 ${
+                    isOpen ? "opacity-100" : "opacity-0"
+                }`} 
+                onClick={close} 
+                aria-hidden
+            ></div>
+            <div 
+                className={`relative z-10 flex flex-col items-center justify-center h-full text-white/90 transition-all duration-500 transform ${
+                    isOpen ? "translate-y-0 opacity-100 scale-100" : "translate-y-8 opacity-0 scale-95"
+                }`}
+            >
+                <nav className="flex flex-col items-center gap-8 text-xl font-semibold" onClick={close}>
+                    <Link 
+                        to="/" 
+                        className="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-white/10 hover:text-blue-400 hover:scale-105 active:scale-95" 
+                        role="menuitem"
+                    >
+                        <FaHome className="text-2xl" />
+                        <span>HOME</span>
+                    </Link>
+                    <Link 
+                        to="/login" 
+                        className="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-white/10 hover:text-blue-400 hover:scale-105 active:scale-95" 
+                        role="menuitem"
+                    >
+                        <FaSignInAlt className="text-2xl" />
+                        <span>LOGIN</span>
+                    </Link>
+                    <Link 
+                        to="/cadastro" 
+                        className="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-white/10 hover:text-blue-400 hover:scale-105 active:scale-95" 
+                        role="menuitem"
+                    >
+                        <FaUserPlus className="text-2xl" />
+                        <span>CADASTRO</span>
+                    </Link>
+                    <Link 
+                        to="/remedios" 
+                        className="flex items-center gap-3 p-3 rounded-lg transition-all duration-300 hover:bg-white/10 hover:text-blue-400 hover:scale-105 active:scale-95" 
+                        role="menuitem"
+                    >
+                        <FaPills className="text-2xl" />
+                        <span>REMÉDIOS</span>
+                    </Link>
                 </nav>
-                <div className="mt-10 flex items-center gap-6 text-2xl opacity-90">
-                    <a href="#" aria-label="Facebook" className="hover:opacity-70">⬤</a>
-                    <a href="#" aria-label="Instagram" className="hover:opacity-70">⬤</a>
-                    <a href="#" aria-label="Twitter" className="hover:opacity-70">⬤</a>
-                    <a href="#" aria-label="GitHub" className="hover:opacity-70">⬤</a>
+                <div className="mt-12 flex items-center gap-8">
+                    <a 
+                        href="#" 
+                        aria-label="Facebook" 
+                        className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-blue-500 hover:scale-110 hover:rotate-12 active:scale-95"
+                    >
+                        <FaFacebookF className="text-xl" />
+                    </a>
+                    <a 
+                        href="#" 
+                        aria-label="Instagram" 
+                        className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 hover:scale-110 hover:-rotate-12 active:scale-95"
+                    >
+                        <FaInstagram className="text-xl" />
+                    </a>
+                    <a 
+                        href="#" 
+                        aria-label="Twitter" 
+                        className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-blue-400 hover:scale-110 hover:rotate-12 active:scale-95"
+                    >
+                        <FaTwitter className="text-xl" />
+                    </a>
+                    <a 
+                        href="#" 
+                        aria-label="GitHub" 
+                        className="p-3 rounded-full bg-white/5 transition-all duration-300 hover:bg-gray-700 hover:scale-110 hover:-rotate-12 active:scale-95"
+                    >
+                        <FaGithub className="text-xl" />
+                    </a>
                 </div>
             </div>
         </div>
