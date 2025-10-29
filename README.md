@@ -30,6 +30,8 @@
 | **F09** | Arrumar `Cabecalho`/`Menu`, colocar o link da página Remédios e configurar no `App.tsx` | Andrei, Manu, Felipe |
 | **F10** | Instalar e configurar o TailwindCSS. Estilizar os cards de notícia da página Home | GabrielSbrana, Moisés, Thiago |
 | **F11** | Criar e preencher a API com `json-server` (endpoint: `remedios` - dados: `[id, nome, descricao, dataFabricacao, dataValidade, imagem]`). Página Remédios completa e estilizada. | Andrei, Manuela, Felipe |
+| **F12** | Fazer um *Menu Hamburger* responsivo e colocar uma *logo* para o site | Murillo, LeonardoZ, João |
+| **F13** | Criar componente de **Cadastro** (formulário, validação de `useForms`, estilizado) | Murillo, PedroM, LeonardoZ | **atrasado** |
 
 ---
 **## ✅ FEATURES IMPLEMENTADAS PELO BUGFIX (CONCLUÍDAS)**
@@ -46,10 +48,8 @@
 | Status | Descrição da Feature | Responsáveis | Observação |
 | :---: | :--- | :--- | :--- |
 | [ &nbsp;] | Criar API com `json-server` (endpoint: `usuarios` - dados: `[id, nome, nomeUser, email, avatar]`) | GustavoM, EnzoR, Luiz | **Não fez** |
-| [ &nbsp;] | Melhorar e estilizar o componente `CardRemedio` e a Página **Remédios** | Luna, GustavoK, FelipeM, Alisson | Verificar |
+| [ &nbsp;] | Melhorar e estilizar o componente `CardRemedio` e a Página **Remédios** | Luna, GustavoK, FelipeM, Alisson | Atrasado |
 | [ &nbsp;] | Criar e preencher a API com `json-server` (endpoint: `remedios` - dados: `[id, nome, descricao, dataFabricacao, dataValidade, imagem]`) | Murillo, PedroM, Jojo | **Não fez** |
-| [ &nbsp;] | Criar componente de **Cadastro** (formulário, validação de `useForms`, estilizado) | Murillo, PedroM, LeonardoZ | **atrasado** |
-
 ---
 
 ## 🟡 FEATURES EM DESENVOLVIMENTO
@@ -59,7 +59,6 @@
 | :---: | :--- | :--- |
 | [ &nbsp;] | Criar API (lista mockada) (endpoint: `usuarios` - dados: `[id, nome, nomeUser, email, avatar]`) | GabrielSbrana, Moisés, Thiago |
 | [ &nbsp;] | Criar conteúdo para a página Home com icones, links de navegação e imagens (deixar estilizada e finalizada)| Luna, GustavoK, Alisson |
-| [ &nbsp;] | Fazer um *Menu Hamburger* responsivo e colocar uma *logo* para o site | Murillo, LeonardoZ, João |
 | [ &nbsp;] | Atualizar API da aplicação para uma API de remédios externa Página Remedios completa e estilizada | Manu, Felipe, Andrei |
 ---
 
