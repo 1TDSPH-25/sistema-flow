@@ -63,7 +63,7 @@
   }
 
   .category-card-icon {
-    @apply w-16 h-16 bg-gray-200 rounded-full mb-3;
+    @apply w-16 h-16 rounded-full mb-3;
   }
 
   .category-card p {
