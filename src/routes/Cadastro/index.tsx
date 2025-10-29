@@ -69,5 +69,25 @@ export default function PaginaCadastro() {
             />
             {errors.email && <p className="text-red-500 text-sm mt-1">{String(errors.email.message)}</p>}
           </div>
+          {/* Botão */}
+          <button
+            type="submit"
+            className="w-full bg-emerald-500 text-white font-semibold p-3 rounded-lg shadow-md hover:bg-emerald-600 hover:shadow-lg transition-all duration-200"
+          >
+            Cadastrar
+          </button>
+        </form>
 
-
+        <p className="text-center mt-6 text-gray-600 text-sm">
+          Já tem conta?
+          <Link
+            to="/login"
+            className="text-emerald-600 hover:text-emerald-700 font-medium ml-1 transition-colors"
+          >
+            Faça login aqui
+          </Link>
+        </p>
+      </div>
+    </div>
+  )
+}
