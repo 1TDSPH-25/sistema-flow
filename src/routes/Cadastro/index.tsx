@@ -214,6 +214,25 @@ export default function PaginaCadastro() {
             </select>
             {errors.estado && <p className="text-red-500 text-sm mt-1">{String(errors.estado.message)}</p>}
           </div>
+
+          {/* Gênero */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Gênero</label>
+            <select
+              {...register("genero", {
+                required: "Gênero é obrigatório"
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+            >
+              <option value="">Selecione seu gênero</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="nao-binario">Não-binário</option>
+              <option value="outro">Outro</option>
+              <option value="prefiro-nao-informar">Prefiro não informar</option>
+            </select>
+            {errors.genero && <p className="text-red-500 text-sm mt-1">{String(errors.genero.message)}</p>}
+          </div>
           {/* Botão */}
           <button
             type="submit"
