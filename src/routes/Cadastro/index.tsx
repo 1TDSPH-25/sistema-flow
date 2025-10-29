@@ -87,6 +87,25 @@ export default function PaginaCadastro() {
             />
             {errors.telefone && <p className="text-red-500 text-sm mt-1">{String(errors.telefone.message)}</p>}
           </div>
+
+          {/* Senha */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Senha</label>
+            <input
+              type="password"
+              {...register("senha", {
+                required: "Senha é obrigatória",
+                minLength: { value: 8, message: "A senha deve ter pelo menos 8 caracteres" },
+                pattern: {
+                  value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+                  message: "A senha deve conter pelo menos uma letra maiúscula, uma minúscula e um número"
+                }
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              placeholder="Digite sua senha"
+            />
+            {errors.senha && <p className="text-red-500 text-sm mt-1">{String(errors.senha.message)}</p>}
+          </div>
           {/* Botão */}
           <button
             type="submit"
