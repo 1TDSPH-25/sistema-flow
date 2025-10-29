@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
  
 export default function Menu(){
     return(
-        <nav className="flex justify-center gap-6 p-4">
-            <Link to="/" className="hover:text-gray-400">Home</Link>
-            <Link to="/login" className="hover:text-gray-400">Login</Link>
-            <Link to="/cadastro" className="hover:text-gray-400">Cadastro</Link>
-            <Link to="/remedios" className="hover:text-gray-400">Remédios</Link>
+        <nav className="flex items-center gap-8">
+            <Link to="/" className="text-white hover:text-blue-200 transition-colors duration-200 font-medium">Home</Link>
+            <Link to="/login" className="text-white hover:text-blue-200 transition-colors duration-200 font-medium">Login</Link>
+            <Link to="/cadastro" className="text-white hover:text-blue-200 transition-colors duration-200 font-medium">Cadastro</Link>
+            <Link to="/remedios" className="text-white hover:text-blue-200 transition-colors duration-200 font-medium">Remédios</Link>
         </nav>
     );
 }
