@@ -106,6 +106,21 @@ export default function PaginaCadastro() {
             />
             {errors.senha && <p className="text-red-500 text-sm mt-1">{String(errors.senha.message)}</p>}
           </div>
+
+          {/* Confirmar Senha */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Confirmar Senha</label>
+            <input
+              type="password"
+              {...register("confirmarSenha", {
+                required: "Confirmação de senha é obrigatória",
+                validate: (value, formValues) => value === formValues.senha || "As senhas não coincidem"
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              placeholder="Confirme sua senha"
+            />
+            {errors.confirmarSenha && <p className="text-red-500 text-sm mt-1">{String(errors.confirmarSenha.message)}</p>}
+          </div>
           {/* Botão */}
           <button
             type="submit"
