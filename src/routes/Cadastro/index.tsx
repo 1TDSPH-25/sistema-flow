@@ -82,7 +82,7 @@ export default function PaginaCadastro() {
           Já tem conta?
           <Link
             to="/login"
-            className="text-emerald-600 hover:text-emerald-700 font-medium ml-1 transition-colors"
+            className="text-blue-600 hover:text-blue-700 font-medium ml-1 transition-colors"
           >
             Faça login aqui
           </Link>
