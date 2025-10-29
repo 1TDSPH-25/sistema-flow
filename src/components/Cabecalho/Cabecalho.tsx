@@ -7,7 +7,10 @@ export default function Cabecalho () {
     return (
     <header className="relative flex items-center justify-between p-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg">
         <div className="flex items-center">
-            <h1 className="text-2xl font-bold">Sistema Flow</h1>
+            <h1 className="text-2xl font-bold flex items-center">
+                <img src="/favicon.svg" alt="Sistema Flow" className="w-8 h-8 mr-3" />
+                <span>Sistema Flow</span>
+            </h1>
         </div>
         <MenuProvider>
             <div className="flex items-center gap-4">
