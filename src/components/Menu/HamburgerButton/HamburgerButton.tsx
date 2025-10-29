@@ -19,15 +19,15 @@ const HamburgerButton = forwardRef<HTMLButtonElement, HamburgerButtonProps>(func
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             onClick={toggle}
-            className={`inline-flex items-center justify-center w-10 h-10 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 ${className}`}
+            className={`relative inline-flex items-center justify-center w-12 h-12 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-300 hover:bg-white/10 ${className}`}
             {...rest}
         >
             <span className="sr-only">{isOpen ? "Fechar menu" : "Abrir menu"}</span>
-            <span aria-hidden className="block w-6">
-                <span className={`block h-0.5 bg-current transition-transform ${isOpen ? "translate-y-1.5 rotate-45" : "mb-1.5"}`}></span>
-                <span className={`block h-0.5 bg-current transition-opacity ${isOpen ? "opacity-0" : "mb-1.5"}`}></span>
-                <span className={`block h-0.5 bg-current transition-transform ${isOpen ? "-translate-y-1.5 -rotate-45" : ""}`}></span>
-            </span>
+            <div className="relative w-6 h-6">
+                <span className={`absolute top-1 left-0 w-6 h-0.5 bg-current transition-all duration-300 ease-in-out ${isOpen ? "rotate-45 translate-y-2" : "translate-y-0"}`}></span>
+                <span className={`absolute top-3 left-0 w-6 h-0.5 bg-current transition-all duration-300 ease-in-out ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
+                <span className={`absolute top-5 left-0 w-6 h-0.5 bg-current transition-all duration-300 ease-in-out ${isOpen ? "-rotate-45 -translate-y-2" : "translate-y-0"}`}></span>
+            </div>
         </button>
     );
 });
