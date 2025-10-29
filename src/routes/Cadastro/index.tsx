@@ -13,7 +13,7 @@ export default function PaginaCadastro() {
         <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
           Cadastre-se 💙
         </h1>
-        <p className="text-center text-gray-500 mb-8 text-sm">
+        <p className="text-center text-gray-600 mb-8 text-sm">
           Preencha os campos abaixo para se cadastrar.
         </p>
 
