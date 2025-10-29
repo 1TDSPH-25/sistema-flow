@@ -7,3 +7,5 @@ export default function PaginaCadastro() {
   console.log(data)
   alert('Cadastro realizado com sucesso!')
 }
+return (
+  <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-300 via-emerald-400 to-green-600 p-4"></div>
