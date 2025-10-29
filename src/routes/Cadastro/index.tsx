@@ -8,12 +8,12 @@ export default function PaginaCadastro() {
   alert('Cadastro realizado com sucesso!')
 }
  return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-300 via-emerald-400 to-green-600 p-4">
-      <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl w-full max-w-md transition-all hover:shadow-green-300/50">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-300 via-blue-400 to-blue-600 p-4">
+      <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl w-full max-w-md transition-all hover:shadow-blue-300/50">
         <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
-          Crie sua conta 🌿
+          Cadastre-se 💙
         </h1>
-        <p className="text-center text-gray-500 mb-8 text-sm">
+        <p className="text-center text-gray-600 mb-8 text-sm">
           Preencha os campos abaixo para se cadastrar.
         </p>
 
@@ -27,7 +27,7 @@ export default function PaginaCadastro() {
                 required: "Nome é obrigatório",
                 minLength: { value: 3, message: "O nome deve ter pelo menos 3 caracteres." }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
               placeholder="Ex: João Silva"
             />
             {errors.nome && <p className="text-red-500 text-sm mt-1">{String(errors.nome.message)}</p>}
@@ -46,7 +46,7 @@ export default function PaginaCadastro() {
                 },
                 minLength: { value: 3, message: "Mínimo de 3 caracteres." }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
               placeholder="Ex: joaosilva"
             />
             {errors.nomeUsuario && <p className="text-red-500 text-sm mt-1">{String(errors.nomeUsuario.message)}</p>}
@@ -64,15 +64,72 @@ export default function PaginaCadastro() {
                   message: "Insira um email válido."
                 }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:border-transparent transition"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
               placeholder="exemplo@email.com"
             />
             {errors.email && <p className="text-red-500 text-sm mt-1">{String(errors.email.message)}</p>}
           </div>
+
+          {/* Telefone */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Telefone</label>
+            <input
+              type="tel"
+              {...register("telefone", {
+                required: "Telefone é obrigatório",
+                pattern: {
+                  value: /^\(\d{2}\)\s\d{4,5}-\d{4}$/,
+                  message: "Formato: (11) 99999-9999"
+                }
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              placeholder="(11) 99999-9999"
+            />
+            {errors.telefone && <p className="text-red-500 text-sm mt-1">{String(errors.telefone.message)}</p>}
+          </div>
+
+          {/* Senha */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Senha</label>
+            <input
+              type="password"
+              {...register("senha", {
+                required: "Senha é obrigatória",
+                minLength: { value: 8, message: "A senha deve ter pelo menos 8 caracteres" },
+                pattern: {
+                  value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
+                  message: "A senha deve conter pelo menos uma letra maiúscula, uma minúscula e um número"
+                }
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              placeholder="Digite sua senha"
+            />
+            {errors.senha && <p className="text-red-500 text-sm mt-1">{String(errors.senha.message)}</p>}
+          </div>
+
+          {/* Data de Nascimento */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Data de Nascimento</label>
+            <input
+              type="date"
+              {...register("dataNascimento", {
+                required: "Data de nascimento é obrigatória",
+                validate: (value) => {
+                  const today = new Date()
+                  const birthDate = new Date(value)
+                  const age = today.getFullYear() - birthDate.getFullYear()
+                  return age >= 18 || "Você deve ter pelo menos 18 anos"
+                }
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+            />
+            {errors.dataNascimento && <p className="text-red-500 text-sm mt-1">{String(errors.dataNascimento.message)}</p>}
+          </div>
+
           {/* Botão */}
           <button
             type="submit"
-            className="w-full bg-emerald-500 text-white font-semibold p-3 rounded-lg shadow-md hover:bg-emerald-600 hover:shadow-lg transition-all duration-200"
+            className="w-full bg-blue-500 text-white font-semibold p-3 rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-200"
           >
             Cadastrar
           </button>
@@ -82,7 +139,7 @@ export default function PaginaCadastro() {
           Já tem conta?
           <Link
             to="/login"
-            className="text-emerald-600 hover:text-emerald-700 font-medium ml-1 transition-colors"
+            className="text-blue-600 hover:text-blue-700 font-medium ml-1 transition-colors"
           >
             Faça login aqui
           </Link>
