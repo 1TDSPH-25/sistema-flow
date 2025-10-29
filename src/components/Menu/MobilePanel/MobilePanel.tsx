@@ -55,7 +55,7 @@ export default function MobilePanel() {
             {/* Conteúdo do menu */}
             <div className={`relative z-10 flex flex-col h-full bg-white transform transition-transform duration-300 ease-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 {/* Header do menu */}
-                <div className="flex items-center justify-between p-6">
+                <div className="flex items-center justify-end p-6">
                     {/* Botão X para fechar */}
                     <button
                         onClick={close}
@@ -66,11 +66,6 @@ export default function MobilePanel() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
-                    
-                    {/* Logo/ícone estilizado */}
-                    <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full">
-                        <span className="text-white text-2xl font-bold">&</span>
-                    </div>
                 </div>
 
                 {/* Navegação principal */}
@@ -115,15 +110,6 @@ export default function MobilePanel() {
                     </nav>
                 </div>
 
-                {/* Botão de call-to-action */}
-                <div className="p-8">
-                    <button 
-                        className={`w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-8 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
-                        style={{ transitionDelay: isOpen ? '0.5s' : '0s' }}
-                    >
-                        Entre em Contato +
-                    </button>
-                </div>
             </div>
         </div>
     );
