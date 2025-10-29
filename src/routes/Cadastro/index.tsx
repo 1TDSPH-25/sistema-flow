@@ -121,6 +121,25 @@ export default function PaginaCadastro() {
             />
             {errors.confirmarSenha && <p className="text-red-500 text-sm mt-1">{String(errors.confirmarSenha.message)}</p>}
           </div>
+
+          {/* Data de Nascimento */}
+          <div>
+            <label className="block text-sm font-medium mb-2 text-gray-700">Data de Nascimento</label>
+            <input
+              type="date"
+              {...register("dataNascimento", {
+                required: "Data de nascimento é obrigatória",
+                validate: (value) => {
+                  const today = new Date()
+                  const birthDate = new Date(value)
+                  const age = today.getFullYear() - birthDate.getFullYear()
+                  return age >= 18 || "Você deve ter pelo menos 18 anos"
+                }
+              })}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+            />
+            {errors.dataNascimento && <p className="text-red-500 text-sm mt-1">{String(errors.dataNascimento.message)}</p>}
+          </div>
           {/* Botão */}
           <button
             type="submit"
