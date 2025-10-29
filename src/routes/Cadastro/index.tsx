@@ -1,41 +1,45 @@
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
-export default function PaginaCadastro() {
-   const { register, handleSubmit, formState: { errors } } = useForm()
 
-   function onSubmit(data: any) {
-  console.log(data)
-  alert('Cadastro realizado com sucesso!')
-}
- return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-300 via-blue-400 to-blue-600 p-4">
-      <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl w-full max-w-md transition-all hover:shadow-blue-300/50">
-        <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
+export default function PaginaCadastro() {
+  // O tipo 'any' para 'data' é usado para simplificar, mas
+  // em um projeto real, você deve definir uma interface TypeScript para o formulário.
+  const { register, handleSubmit, formState: { errors } } = useForm()
+
+  function onSubmit(data: any) {
+    console.log(data)
+    alert('Cadastro realizado com sucesso!')
+  }
+
+  return (
+    <div className="cadastro-container">
+      <div className="cadastro-card">
+        <h1 className="cadastro-title">
           Cadastre-se 💙
         </h1>
-        <p className="text-center text-gray-600 mb-8 text-sm">
+        <p className="cadastro-subtitle">
           Preencha os campos abaixo para se cadastrar.
         </p>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+        <form onSubmit={handleSubmit(onSubmit)} className="cadastro-form">
           {/* Nome */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">Nome</label>
+          <div className="form-group">
+            <label className="form-label">Nome</label>
             <input
               type="text"
               {...register("nome", {
                 required: "Nome é obrigatório",
                 minLength: { value: 3, message: "O nome deve ter pelo menos 3 caracteres." }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              className="form-input"
               placeholder="Ex: João Silva"
             />
-            {errors.nome && <p className="text-red-500 text-sm mt-1">{String(errors.nome.message)}</p>}
+            {errors.nome && <p className="form-error">{String(errors.nome.message)}</p>}
           </div>
 
           {/* Nome de usuário */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">Nome de usuário</label>
+          <div className="form-group">
+            <label className="form-label">Nome de usuário</label>
             <input
               type="text"
               {...register("nomeUsuario", {
@@ -46,70 +50,73 @@ export default function PaginaCadastro() {
                 },
                 minLength: { value: 3, message: "Mínimo de 3 caracteres." }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              className="form-input"
               placeholder="Ex: joaosilva"
             />
-            {errors.nomeUsuario && <p className="text-red-500 text-sm mt-1">{String(errors.nomeUsuario.message)}</p>}
+            {errors.nomeUsuario && <p className="form-error">{String(errors.nomeUsuario.message)}</p>}
           </div>
 
           {/* Email */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">Email</label>
+          <div className="form-group">
+            <label className="form-label">Email</label>
             <input
               type="email"
               {...register("email", {
                 required: "Email é obrigatório",
                 pattern: {
+                  // Regex para validação básica de email
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   message: "Insira um email válido."
                 }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              className="form-input"
               placeholder="exemplo@email.com"
             />
-            {errors.email && <p className="text-red-500 text-sm mt-1">{String(errors.email.message)}</p>}
+            {errors.email && <p className="form-error">{String(errors.email.message)}</p>}
           </div>
 
           {/* Telefone */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">Telefone</label>
+          <div className="form-group">
+            <label className="form-label">Telefone</label>
             <input
               type="tel"
               {...register("telefone", {
                 required: "Telefone é obrigatório",
                 pattern: {
+                  // Regex para o formato (99) 99999-9999 ou (99) 9999-9999
                   value: /^\(\d{2}\)\s\d{4,5}-\d{4}$/,
                   message: "Formato: (11) 99999-9999"
                 }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              className="form-input"
               placeholder="(11) 99999-9999"
             />
-            {errors.telefone && <p className="text-red-500 text-sm mt-1">{String(errors.telefone.message)}</p>}
+            {errors.telefone && <p className="form-error">{String(errors.telefone.message)}</p>}
           </div>
 
           {/* Senha */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">Senha</label>
+          <div className="form-group">
+            <label className="form-label">Senha</label>
             <input
               type="password"
               {...register("senha", {
                 required: "Senha é obrigatória",
                 minLength: { value: 8, message: "A senha deve ter pelo menos 8 caracteres" },
                 pattern: {
+                  // Deve conter pelo menos uma letra minúscula, uma maiúscula e um número
                   value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/,
                   message: "A senha deve conter pelo menos uma letra maiúscula, uma minúscula e um número"
                 }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              className="form-input"
               placeholder="Digite sua senha"
             />
-            {errors.senha && <p className="text-red-500 text-sm mt-1">{String(errors.senha.message)}</p>}
+            {errors.senha && <p className="form-error">{String(errors.senha.message)}</p>}
           </div>
 
           {/* Data de Nascimento */}
-          <div>
-            <label className="block text-sm font-medium mb-2 text-gray-700">Data de Nascimento</label>
+          <div className="form-group">
+            <label className="form-label">Data de Nascimento</label>
             <input
               type="date"
               {...register("dataNascimento", {
@@ -118,28 +125,36 @@ export default function PaginaCadastro() {
                   const today = new Date()
                   const birthDate = new Date(value)
                   const age = today.getFullYear() - birthDate.getFullYear()
-                  return age >= 18 || "Você deve ter pelo menos 18 anos"
+                  
+                  // Verifica se já fez aniversário no ano
+                  const monthDiff = today.getMonth() - birthDate.getMonth()
+                  const dayDiff = today.getDate() - birthDate.getDate()
+                  
+                  // Se a idade for 18, verifica se o aniversário já passou ou é hoje
+                  const is18OrOlder = age > 18 || (age === 18 && (monthDiff > 0 || (monthDiff === 0 && dayDiff >= 0)))
+
+                  return is18OrOlder || "Você deve ter pelo menos 18 anos"
                 }
               })}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition"
+              className="form-input"
             />
-            {errors.dataNascimento && <p className="text-red-500 text-sm mt-1">{String(errors.dataNascimento.message)}</p>}
+            {/* O erro da Data de Nascimento pode precisar de mais espaço, por isso ajustei a classe form-error */}
+            {errors.dataNascimento && <p className="form-error">{String(errors.dataNascimento.message)}</p>}
           </div>
 
           {/* Botão */}
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white font-semibold p-3 rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg transition-all duration-200"
+            className="submit-button"
           >
             Cadastrar
           </button>
         </form>
 
-        <p className="text-center mt-6 text-gray-600 text-sm">
+        <p className="login-link">
           Já tem conta?
           <Link
             to="/login"
-            className="text-blue-600 hover:text-blue-700 font-medium ml-1 transition-colors"
           >
             Faça login aqui
           </Link>
