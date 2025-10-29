@@ -11,7 +11,10 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="w-96 p-6 bg-white shadow rounded-2xl">
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-bold mb-2">Sistema Flow</h1>
+          <h1 className="text-2xl font-bold mb-2 flex items-center justify-center gap-3">
+            <img src="/favicon.svg" alt="Sistema Flow" className="w-8 h-8" />
+            <span>Sistema Flow</span>
+          </h1>
           <p className="text-gray-600">Entre na sua conta</p>
         </div>
 

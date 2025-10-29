@@ -17,6 +17,21 @@
   /* ---------- Página de Cadastro ---------- */
   .cadastro-container {
     @apply min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 p-6;
+  /* Utilitários de acessibilidade */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .cardNoticia {
+    @apply border border-gray-500 rounded-lg shadow-lg bg-gray-300 transition-all text-center flex flex-col items-center;
 
     .cadastro-card {
       @apply bg-white/95 backdrop-blur-md px-8 py-6 rounded-2xl shadow-2xl w-full max-w-md 
