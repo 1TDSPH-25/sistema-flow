@@ -8,7 +8,7 @@ export default function PaginaCadastro() {
   alert('Cadastro realizado com sucesso!')
 }
  return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-300 via-emerald-400 to-green-600 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-300 via-blue-400 to-blue-600 p-4">
       <div className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl w-full max-w-md transition-all hover:shadow-green-300/50">
         <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
           Crie sua conta 🌿
