@@ -1,4 +1,4 @@
-import { useMenuContext } from "../context/MenuContext";
+import { useMenuContext } from "../context/menu-context";
 
 export function useMenu() {
     return useMenuContext();
