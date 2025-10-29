@@ -4,19 +4,25 @@
   scroll-behavior: smooth;
 }
 
+/* Impede rolagem horizontal */
+html,
+body {
+  @apply overflow-x-hidden w-full;
+}
+
 @layer components {
   /* ---------- Layout Base ---------- */
   .app-container {
-    @apply flex flex-col w-screen min-h-screen justify-between bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700;
+    @apply flex flex-col min-h-screen justify-between bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 w-full;
   }
 
   main {
-    @apply w-screen overflow-auto;
+    @apply w-full overflow-y-auto overflow-x-hidden;
   }
 
   /* ---------- Página de Cadastro ---------- */
   .cadastro-container {
-    @apply min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 p-6;
+    @apply min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 p-6 overflow-x-hidden;
 
     .cadastro-card {
       @apply bg-white/95 backdrop-blur-md px-8 py-6 rounded-2xl shadow-2xl w-full max-w-md 
@@ -78,7 +84,8 @@
 
   /* ---------- Card de Notícias ---------- */
   .cardNoticia {
-    @apply border border-gray-400 rounded-xl shadow-md bg-gray-200/90 transition-all text-center flex flex-col items-center p-4;
+    @apply border border-gray-400 rounded-xl shadow-md bg-gray-200/90 transition-all 
+           text-center flex flex-col items-center p-4 w-full max-w-xs mx-auto;
 
     a {
       @apply bg-blue-500 flex justify-center items-center rounded-lg shadow-lg text-white font-semibold py-2 px-4 mt-3;
@@ -91,7 +98,7 @@
 
   /* ---------- Página de Remédios ---------- */
   .remedios-page {
-    @apply min-h-screen bg-gray-100 p-8;
+    @apply min-h-screen bg-gray-100 p-8 overflow-x-hidden;
 
     .remedios-title {
       @apply text-4xl font-bold text-gray-900 mb-8 text-center;
