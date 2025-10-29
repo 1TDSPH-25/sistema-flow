@@ -7,19 +7,33 @@ export default function MobilePanel() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape' && isOpen) {
+                close();
+            }
+        };
+
         if (isOpen) {
             setIsVisible(true);
             document.body.style.overflow = 'hidden';
+            document.addEventListener('keydown', handleKeyDown);
+            // Foca no primeiro elemento interativo quando o menu abre
+            const firstButton = document.querySelector('#mobile-menu button') as HTMLElement;
+            if (firstButton) {
+                setTimeout(() => firstButton.focus(), 100);
+            }
         } else {
             document.body.style.overflow = 'unset';
+            document.removeEventListener('keydown', handleKeyDown);
             const timer = setTimeout(() => setIsVisible(false), 300);
             return () => clearTimeout(timer);
         }
         
         return () => {
             document.body.style.overflow = 'unset';
+            document.removeEventListener('keydown', handleKeyDown);
         };
-    }, [isOpen]);
+    }, [isOpen, close]);
 
     if (!isOpen && !isVisible) return null;
 
