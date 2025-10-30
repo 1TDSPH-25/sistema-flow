@@ -5,10 +5,10 @@ import MobilePanel from "../Menu/MobilePanel/MobilePanel";
 
 export default function Cabecalho () {
     return (
-    <header className="relative flex items-center justify-between p-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg">
+    <header className="relative flex items-center justify-between p-4 bg-linear-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg">
         <div className="flex items-center">
             <h1 className="text-2xl font-bold flex items-center">
-                <img src="/favicon.svg" alt="Sistema Flow" className="w-8 h-8 mr-3" />
+                <img src="/sistema-flow/favicon.svg" alt="Sistema Flow" className="w-8 h-8 mr-3" />
                 <span>Sistema Flow</span>
             </h1>
         </div>
