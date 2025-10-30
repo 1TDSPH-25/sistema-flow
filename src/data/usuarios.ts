@@ -1,0 +1,35 @@
+import type { TipoUsuario } from "../types/tipoUsuario";
+
+export const usuarios:TipoUsuario[] = [
+  { id: 1, nome: "João da Silva", nomeUser: "joao1010", email: "joaosilva110@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 2, nome: "Maria Oliveira", nomeUser: "maria_oli", email: "maria.oliveira22@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 3, nome: "Carlos Souza", nomeUser: "csouza99", email: "carlos.souza99@hotmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 4, nome: "Ana Pereira", nomeUser: "anapx", email: "ana.pereira@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 5, nome: "Bruno Lima", nomeUser: "brunolim4", email: "bruno.lima4@yahoo.com", avatar: "../public/user-photo.jpg" },
+  { id: 6, nome: "Camila Rocha", nomeUser: "cami_roch", email: "camila.rocha@outlook.com", avatar: "../public/user-photo.jpg" },
+  { id: 7, nome: "Lucas Almeida", nomeUser: "lucasalx", email: "lucas.almeida@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 8, nome: "Fernanda Costa", nomeUser: "feco23", email: "fernandacosta23@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 9, nome: "Ricardo Santos", nomeUser: "ric_santos", email: "ricardo.santos@yahoo.com", avatar: "../public/user-photo.jpg" },
+  { id: 10, nome: "Patrícia Nunes", nomeUser: "patynunes", email: "patricia.nunes@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 11, nome: "Eduardo Mendes", nomeUser: "edumend", email: "eduardo.mendes@outlook.com", avatar: "../public/user-photo.jpg" },
+  { id: 12, nome: "Larissa Ramos", nomeUser: "lari_rms", email: "larissa.ramos@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 13, nome: "André Barbosa", nomeUser: "andrebarb", email: "andre.barbosa@hotmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 14, nome: "Tatiane Lopes", nomeUser: "tati_lps", email: "tatiane.lopes@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 15, nome: "Rodrigo Martins", nomeUser: "rodrim", email: "rodrigo.martins@yahoo.com", avatar: "../public/user-photo.jpg" },
+  { id: 16, nome: "Beatriz Fernandes", nomeUser: "biaf_22", email: "beatriz.fernandes@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 17, nome: "Gustavo Correia", nomeUser: "guscor", email: "gustavo.correia@outlook.com", avatar: "../public/user-photo.jpg" },
+  { id: 18, nome: "Paula Ribeiro", nomeUser: "paularib", email: "paula.ribeiro@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 19, nome: "Henrique Duarte", nomeUser: "hduarte_", email: "henrique.duarte@hotmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 20, nome: "Juliana Moraes", nomeUser: "julimoraes", email: "juliana.moraes@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 21, nome: "Marcelo Teixeira", nomeUser: "marcelotx", email: "marcelo.teixeira@yahoo.com", avatar: "../public/user-photo.jpg" },
+  { id: 22, nome: "Carla Brito", nomeUser: "carlabrito_", email: "carla.brito@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 23, nome: "Fábio Monteiro", nomeUser: "fmonteiro", email: "fabio.monteiro@outlook.com", avatar: "../public/user-photo.jpg" },
+  { id: 24, nome: "Aline Cardoso", nomeUser: "alinecds", email: "aline.cardoso@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 25, nome: "Rafael Gonçalves", nomeUser: "rafagon", email: "rafael.goncalves@yahoo.com", avatar: "../public/user-photo.jpg" },
+  { id: 26, nome: "Sabrina Torres", nomeUser: "sab_torres", email: "sabrina.torres@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 27, nome: "Diego Freitas", nomeUser: "diegofrts", email: "diego.freitas@hotmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 28, nome: "Letícia Carvalho", nomeUser: "letcarv", email: "leticia.carvalho@gmail.com", avatar: "../public/user-photo.jpg" },
+  { id: 29, nome: "Vinícius Lopes", nomeUser: "vinilopes", email: "vinicius.lopes@outlook.com", avatar: "../public/user-photo.jpg" },
+  { id: 30, nome: "Natália Rezende", nomeUser: "natyrez", email: "natalia.rezende@gmail.com", avatar: "../public/user-photo.jpg" }
+
+];
