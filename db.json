@@ -13,6 +13,13 @@
       "nomeUser": "maria_oliveira",
       "email": "maria@example.com",
       "avatar": ""
+    },
+    {
+      "id": 3,
+      "nome": "Pedro Santos",
+      "nomeUser": "pedro_santos",
+      "email": "pedro@example.com",
+      "avatar": ""
     }
   ]
 }
