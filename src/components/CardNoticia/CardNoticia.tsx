@@ -12,7 +12,7 @@ export default function CardNoticias(props:{noticia: TipoNoticia}){
             <img className="w-[80vw] rounded-lg sm:w-[75vw] md:w-[30vw] lg:w-[25vw]    xl:w-[18vw]" src={props.noticia.urlToImage} alt={props.noticia.title} />
 
             {/* Link */}
-            <Link className="w-[40vw] h-[5vh] mt-4 text-base sm:text-lg md:text-xl md:w-[30vw] lg:text-2xl lg:w-[15vw] xl:w-[10vw]" to={props.noticia.url}>Saiba mais</Link>
+            <Link target="_blank" rel="noopener noreferrer" className="w-[40vw] h-[5vh] mt-4 text-base sm:text-lg md:text-xl md:w-[30vw] lg:text-2xl lg:w-[15vw] xl:w-[10vw]" to={props.noticia.url}>Saiba mais</Link>
 
         </div>
     );
